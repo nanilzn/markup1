@@ -1,0 +1,43 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPugPlugin = require('html-webpack-pug-plugin');
+const path = require('path');
+
+module.exports = {
+  entry: './src/app.js',
+  output: {
+    path: __dirname + '/docs',
+    filename: 'bundle.js'
+  },
+  mode: 'development',
+  devServer: {
+    contentBase: path.join(__dirname, 'docs'),
+    port: 3000,
+    writeToDisk: true,
+  },
+  module: {
+    rules: [
+      {
+        test: /\.pug$/,
+        use: ['html-loader?attrs=false', 'pug-html-loader']
+      },
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader',
+        ],
+      },
+    ]
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      filename: 'some.html',
+      template: './src/some.pug'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      template: './src/index.pug'
+    }),    
+  ]
+};

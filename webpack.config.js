@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackPugPlugin = require('html-webpack-pug-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 
 module.exports = {
@@ -23,11 +24,35 @@ module.exports = {
       {
         test: /\.s[ac]ss$/i,
         use: [
-          'style-loader',
+          MiniCssExtractPlugin.loader,
           'css-loader',
           'sass-loader',
         ],
       },
+      {
+        test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'fonts/'
+            }
+          }
+        ]
+      },
+      {
+        test: /\.(png|jpg|jpeg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'images/'
+            }
+          }
+        ]
+      }
     ]
   },
   plugins: [
@@ -38,6 +63,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: './src/index.pug'
-    }),    
+    }),
+    new MiniCssExtractPlugin({
+      filename: 'style.css',
+      chunkFilename: '[id].css',
+    }),
   ]
 };

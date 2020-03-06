@@ -19,7 +19,7 @@ module.exports = {
     rules: [
       {
         test: /\.pug$/,
-        use: ['html-loader?attrs=false', 'pug-html-loader']
+        use: ['pug-loader']
       },
       {
         test: /\.s[ac]ss$/i,

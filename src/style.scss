@@ -3,6 +3,11 @@
   src: url(fonts/Montserrat-Regular.ttf);
 }
 
+@font-face {
+  font-family: MontserratRegularSvg;
+  src: url(fonts/Montserrat-Regular.svg);
+}
+
 .some {
   font-family: MontserratRegular;
 }

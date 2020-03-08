@@ -1,15 +1,39 @@
 @font-face {
   font-family: MontserratRegular;
-  src: url(fonts/Montserrat-Regular.ttf);
+  src: url(fonts/Montserrat-Regular.ttf),
+       url(fonts/Montserrat-Regular.woff),
+       url(fonts/Montserrat-Regular.svg);
 }
 
 @font-face {
-  font-family: MontserratRegularSvg;
-  src: url(fonts/Montserrat-Regular.svg);
+  font-family: MontserratBold;
+  src: url(fonts/Montserrat-Bold.ttf),
+       url(fonts/Montserrat-Bold.woff),
+       url(fonts/Montserrat-Bold.svg);
+}
+
+@font-face {
+  font-family: QuicksandRegular;
+  src: url(fonts/Quicksand-Regular.ttf),
+       url(fonts/Quicksand-Regular.woff),
+       url(fonts/Quicksand-Regular.svg);
+}
+
+@font-face {
+  font-family: QuicksandBold;
+  src: url(fonts/Quicksand-Bold.ttf),
+       url(fonts/Quicksand-Bold.woff),
+       url(fonts/Quicksand-Bold.svg);
 }
 
 .some {
-  font-family: MontserratRegular;
+  font-family: MontserratBold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
 }
 .nyan {
   width: 450px;

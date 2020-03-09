@@ -31,6 +31,9 @@ module.exports = {
       },
       {
         test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        include: [
+          path.resolve(__dirname, "src/fonts/")
+        ],
         use: [
           {
             loader: 'file-loader',
@@ -43,6 +46,9 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|jpeg|svg)$/,
+        exclude: [
+          path.resolve(__dirname, "src/fonts/")
+        ],
         use: [
           {
             loader: 'file-loader',
@@ -63,6 +69,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: './src/index.pug'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'uikit.html',
+      template: './src/uikit.pug'
     }),
     new MiniCssExtractPlugin({
       filename: 'style.css',

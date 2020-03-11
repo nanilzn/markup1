@@ -70,6 +70,10 @@ module.exports = {
       filename: 'uikit1.html',
       template: './src/uikit1.pug'
     }),
+    new HtmlWebpackPlugin({
+      filename: 'uikit2.html',
+      template: './src/uikit2.pug'
+    }),
     new MiniCssExtractPlugin({
       filename: 'style.css',
       chunkFilename: '[id].css',

@@ -94,53 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ \"./src/style.scss\");\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _button_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./button.scss */ \"./src/button.scss\");\n/* harmony import */ var _button_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_button_scss__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _svg_twitter_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./svg/twitter.svg */ \"./src/svg/twitter.svg\");\n/* harmony import */ var _bem_button_button_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./bem/button/button.js */ \"./src/bem/button/button.js\");\n\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/app.js?");
-
-/***/ }),
-
-/***/ "./src/bem/button/button.jpg":
-/*!***********************************!*\
-  !*** ./src/bem/button/button.jpg ***!
-  \***********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/button.jpg\");\n\n//# sourceURL=webpack:///./src/bem/button/button.jpg?");
-
-/***/ }),
-
-/***/ "./src/bem/button/button.js":
-/*!**********************************!*\
-  !*** ./src/bem/button/button.js ***!
-  \**********************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _button_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./button.jpg */ \"./src/bem/button/button.jpg\");\n/* harmony import */ var _button_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./button.scss */ \"./src/bem/button/button.scss\");\n/* harmony import */ var _button_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_button_scss__WEBPACK_IMPORTED_MODULE_1__);\n\r\n\n\n//# sourceURL=webpack:///./src/bem/button/button.js?");
-
-/***/ }),
-
-/***/ "./src/bem/button/button.scss":
-/*!************************************!*\
-  !*** ./src/bem/button/button.scss ***!
-  \************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/bem/button/button.scss?");
-
-/***/ }),
-
-/***/ "./src/button.scss":
-/*!*************************!*\
-  !*** ./src/button.scss ***!
-  \*************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/button.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ \"./src/style.scss\");\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _uikit_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./uikit.scss */ \"./src/uikit.scss\");\n/* harmony import */ var _uikit_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_uikit_scss__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _svg_twitter_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./svg/twitter.svg */ \"./src/svg/twitter.svg\");\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/app.js?");
 
 /***/ }),
 
@@ -163,7 +117,18 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"svg/twitter.svg\");\n\n//# sourceURL=webpack:///./src/svg/twitter.svg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/twitter.svg\");\n\n//# sourceURL=webpack:///./src/svg/twitter.svg?");
+
+/***/ }),
+
+/***/ "./src/uikit.scss":
+/*!************************!*\
+  !*** ./src/uikit.scss ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/uikit.scss?");
 
 /***/ })
 

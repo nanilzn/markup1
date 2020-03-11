@@ -1,18 +1,292 @@
 @font-face {
   font-family: MontserratRegular;
-  src: url(fonts/Montserrat-Regular.ttf); }
+  src: url(fonts/Montserrat-Regular.ttf), url(fonts/Montserrat-Regular.woff), url(fonts/Montserrat-Regular.svg); }
 
-.some {
+@font-face {
+  font-family: MontserratBold;
+  src: url(fonts/Montserrat-Bold.ttf), url(fonts/Montserrat-Bold.woff), url(fonts/Montserrat-Bold.svg); }
+
+@font-face {
+  font-family: QuicksandRegular;
+  src: url(fonts/Quicksand-Regular.ttf), url(fonts/Quicksand-Regular.woff), url(fonts/Quicksand-Regular.svg); }
+
+@font-face {
+  font-family: QuicksandBold;
+  src: url(fonts/Quicksand-Bold.ttf), url(fonts/Quicksand-Bold.woff), url(fonts/Quicksand-Bold.svg); }
+
+body {
+  font-family: MontserratRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  color: rgba(31, 32, 65, 0.75); }
+
+h1 {
+  font-family: QuicksandBold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1F2041; }
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-family: QuicksandBold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  color: #1F2041; }
+
+h3 {
+  margin: 0;
+  padding: 0;
+  font-family: MontserratBold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041; }
+
+.bgr {
+  background-color: red; }
+
+.bgg {
+  background-color: green; }
+
+.bgb {
+  background-color: blue; }
+
+.bga {
+  background-color: gray; }
+
+.bgy {
+  background-color: yellow; }
+
+@font-face {
+  font-family: MontserratRegular;
+  src: url(fonts/Montserrat-Regular.ttf), url(fonts/Montserrat-Regular.woff), url(fonts/Montserrat-Regular.svg); }
+
+@font-face {
+  font-family: MontserratBold;
+  src: url(fonts/Montserrat-Bold.ttf), url(fonts/Montserrat-Bold.woff), url(fonts/Montserrat-Bold.svg); }
+
+@font-face {
+  font-family: QuicksandRegular;
+  src: url(fonts/Quicksand-Regular.ttf), url(fonts/Quicksand-Regular.woff), url(fonts/Quicksand-Regular.svg); }
+
+@font-face {
+  font-family: QuicksandBold;
+  src: url(fonts/Quicksand-Bold.ttf), url(fonts/Quicksand-Bold.woff), url(fonts/Quicksand-Bold.svg); }
+
+body {
+  font-family: MontserratRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  color: rgba(31, 32, 65, 0.75); }
+
+h1 {
+  font-family: QuicksandBold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1F2041; }
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-family: QuicksandBold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  color: #1F2041; }
+
+h3 {
+  margin: 0;
+  padding: 0;
+  font-family: MontserratBold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041; }
+
+.bgr {
+  background-color: red; }
+
+.bgg {
+  background-color: green; }
+
+.bgb {
+  background-color: blue; }
+
+.bga {
+  background-color: gray; }
+
+.bgy {
+  background-color: yellow; }
+
+.colors-n-type-base {
+  min-width: 1500px; }
+
+.uikit-logo-wrapper {
+  position: absolute;
+  top: 30px;
+  left: 30px; }
+
+.colors {
+  display: flex;
+  flex-direction: column; }
+
+.colors__wrapper {
+  position: absolute;
+  left: 150px;
+  top: 145px; }
+
+.colors__row {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.colors__row:not(:first-child) {
+  margin-top: 20px; }
+
+.colors__square {
+  background-color: white;
+  width: 70px;
+  height: 70px;
+  border-radius: 6px; }
+
+.colors__color-info {
+  margin-left: 40px;
+  line-height: 29px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.colors__code {
+  font-family: QuicksandRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  margin-top: 2px;
+  color: #1F2041; }
+
+.colors__name {
+  margin-top: 2px;
+  margin-bottom: 0;
+  padding-bottom: 0; }
+
+.colors__square_dark-shade-100 {
+  background-color: #1F2041; }
+
+.colors__square_dark-shade-75 {
+  background-color: rgba(31, 32, 65, 0.75); }
+
+.colors__square_dark-shade-50 {
+  background-color: rgba(31, 32, 65, 0.5); }
+
+.colors__square_dark-shade-25 {
+  background-color: rgba(31, 32, 65, 0.25); }
+
+.colors__square_dark-shade-5 {
+  background-color: rgba(31, 32, 65, 0.05); }
+
+.colors__square_purple {
+  background-color: #BC9CFF; }
+
+.colors__square_green {
+  background-color: #6FCF97; }
+
+.text-sizes {
+  display: flex;
+  flex-direction: column; }
+
+.text-sizes__wrapper {
+  position: absolute;
+  left: 846px;
+  top: 145px; }
+
+.text-sizes__row {
+  display: flex;
   font-family: MontserratRegular; }
 
-.nyan {
-  width: 450px;
-  height: 450px;
-  background: url(images/nyan.png); }
+.text-sizes__row:not(:first-child) {
+  margin-top: 50px; }
 
-.alert {
-  border: 1px solid rgba(198, 83, 140, 0.88); }
+.text-sizes__row:last-child {
+  margin-top: 47px; }
 
-.button {
-  background-color: red; }
+.text-sizes__tag {
+  width: 37px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: right;
+  color: rgba(31, 32, 65, 0.25); }
+
+.text-sizes__tag_h1 {
+  font-size: 24px;
+  line-height: 29px; }
+
+.text-sizes__tag_h2 {
+  font-size: 19px;
+  line-height: 23px; }
+
+.text-sizes__tag_h3 {
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase; }
+
+.text-sizes__tag_body {
+  font-size: 14px;
+  line-height: 24px; }
+
+.text-sizes__example {
+  margin-left: 30px;
+  width: 336px; }
+
+.text-sizes__example_h1 {
+  font-family: QuicksandBold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1F2041; }
+
+.text-sizes__example_h2 {
+  font-family: QuicksandBold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  color: #1F2041; }
+
+.text-sizes__example_h3 {
+  font-family: MontserratBold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #1F2041;
+  text-transform: uppercase; }
+
+.text-sizes__example_body {
+  width: 310px;
+  font-family: MontserratRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px; }
 

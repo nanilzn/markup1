@@ -1,3 +1,3 @@
 import './style.scss';
-import './uikit1.scss';
+import './uikit.scss';
 import './svg/twitter.svg';

@@ -13,7 +13,7 @@ module.exports = {
   devServer: {
     contentBase: path.join(__dirname, 'docs'),
     port: 3000,
-    writeToDisk: true,
+    writeToDisk: false,
   },
   module: {
     rules: [
@@ -63,16 +63,12 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      filename: 'some.html',
-      template: './src/some.pug'
-    }),
-    new HtmlWebpackPlugin({
       filename: 'index.html',
       template: './src/index.pug'
     }),
     new HtmlWebpackPlugin({
-      filename: 'uikit.html',
-      template: './src/uikit.pug'
+      filename: 'uikit1.html',
+      template: './src/uikit1.pug'
     }),
     new MiniCssExtractPlugin({
       filename: 'style.css',

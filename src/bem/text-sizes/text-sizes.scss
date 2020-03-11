@@ -1,92 +1,14 @@
-@import 'style.scss';
-
-.uikit-logo-wrapper {
-   position: absolute;
-   top: 30px;
-   left: 30px;
-}
-.colors-n-type-base {
-   min-width: 1500px;
-}
-
-   // colors
-
-.colors-wrapper {
-   position: absolute;
-   left: 150px;
-   top: 145px;
-}
-.colors {
-   display: flex;
-   flex-direction: column;
-}
-.colors__row {
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-}
-.colors__row:not(:first-child) {
-   margin-top: 20px;
-}
-.colors__square {
-   background-color: white;
-   width: 70px;
-   height: 70px;
-   border-radius: 6px;
-}
-.colors__color-info {
-   margin-left: 40px;
-   line-height: 29px;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-}
-.colors__code {
-   font-family: QuicksandRegular;
-   font-style: normal;
-   font-weight: normal;
-   font-size: 19px;
-
-   margin-top: 2px;
-   color: $DarkShade100;
-}
-.colors__name {
-   margin-top: 2px;
-   margin-bottom: 0;
-   padding-bottom: 0;
-}
-.colors__square_dark-shade-100 {
-   background-color: $DarkShade100;
-}
-.colors__square_dark-shade-75 {
-   background-color: $DarkShade75;
-}
-.colors__square_dark-shade-50 {
-   background-color: $DarkShade50;
-}
-.colors__square_dark-shade-25 {
-   background-color: $DarkShade25;
-}
-.colors__square_dark-shade-5 {
-   background-color: $DarkShade5;
-}
-.colors__square_purple {
-   background-color: $Purple;
-}
-.colors__square_green {
-   background-color: $Green;
-}
 
    // text-sizes
 
+.text-sizes {
+   display: flex;
+   flex-direction: column;
+}
 .text-sizes__wrapper {
    position: absolute;
    left: 846px;
    top: 145px;
-}
-.text-sizes {
-   display: flex;
-   flex-direction: column;
 }
 .text-sizes__row {
    display: flex;

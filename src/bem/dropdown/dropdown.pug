@@ -1,0 +1,8 @@
+mixin dropdown(name, defaultValue, values)
+   .dropdown
+      h3.dropdown__header=name
+      div.dropdown__select.dropdown__select_expanded=defaultValue
+         img(src=require('./bem/dropdown/dropdown__arrow.svg').default).dropdown__arrow
+      ul.dropdown__list
+         each val in values
+            li.dropdown__list-item= val

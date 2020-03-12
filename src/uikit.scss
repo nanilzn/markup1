@@ -14,3 +14,22 @@
 
 @import './bem/colors/colors.scss';
 @import './bem/text-sizes/text-sizes.scss';
+
+   // form elements
+   
+.uikit__text-field-wrapper {
+	position: absolute;
+	left: 141px;
+	top: 143px;
+   width: 320px;
+}
+.uikit__dropdown-wrapper {
+   position: absolute;
+   left: 141px;
+   top: 311px;
+   width: 320px;
+   height: 800px;
+}
+
+@import './bem/text-field/text-field.scss';
+@import './bem/dropdown/dropdown.scss';

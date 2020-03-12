@@ -5,4 +5,10 @@ head
    link(rel="stylesheet" href="style.css")
 body
    .uikit-logo-wrapper
-      img(src=require("./svg/logo.svg").default, alt="")
+      img(src=require('./svg/logo.svg').default, alt="")
+   include bem/text-field/text-field.pug
+   .uikit__text-field-wrapper
+      +text-field('Text field')
+   include bem/dropdown/dropdown.pug
+   .uikit__dropdown-wrapper
+      +dropdown('Dropdown', '2 спальни, 2 кровати', ['один', 'два', 'много'])

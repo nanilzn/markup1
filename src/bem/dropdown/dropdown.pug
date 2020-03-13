@@ -5,4 +5,12 @@ mixin dropdown(name, defaultValue, values)
          img(src=require('./bem/dropdown/dropdown__arrow.svg').default).dropdown__arrow
       ul.dropdown__list
          each val in values
-            li.dropdown__list-item= val
+            li.dropdown__list-item
+               .dropdown__list-item-text= val
+               .dropdown__counter
+                  .dropdown__counter-button.dropdown__counter-button_disabled -
+                  .dropdown__counter-value 0
+                  .dropdown__counter-button +
+         .dropdown__control
+            .dropdown__clear Очистить
+            .dropdown__apply Применить

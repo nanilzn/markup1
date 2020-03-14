@@ -1,0 +1,41 @@
+.date-dropdown {
+   
+}
+.date-dropdown__header {
+   text-transform: uppercase;
+}
+.date-dropdown__select {
+   @extend %noselect;
+
+   position: relative;
+
+   background-color: green;
+   height: 44px;
+   background: #FFFFFF;
+   border: 1px solid $DarkShade25;
+   box-sizing: border-box;
+   border-radius: 4px;
+   margin-top: 5px;
+   padding-left: 15px;
+   padding-bottom: 13px;
+   padding-top: 13px;
+   
+   color: $DarkShade75;
+   
+   outline: none;
+   
+   font-family: MontserratRegular;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 16px;
+   width: 100%;
+
+   cursor: default;
+}
+.date-dropdown__arrow {
+   position: absolute;
+   right: 15px;
+   top: 18px;
+   opacity: 1.0;
+}

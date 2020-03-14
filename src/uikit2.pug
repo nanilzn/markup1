@@ -9,6 +9,9 @@ body
    include bem/text-field/text-field.pug
    .uikit__text-field-wrapper
       +text-field('Text field')
+   include bem/masked-text-field/masked-text-field.pug
+   .uikit__masked-text-field-wrapper
+      +masked-text-field('Masked text field')
    include bem/dropdown/dropdown.pug
    .uikit__dropdown-opened-wrapper
       +dropdown('Dropdown', 'Сколько гостей', ['взрослые', 'дети', 'младенцы'])

@@ -1,0 +1,32 @@
+.masked-text-field__header {
+   text-transform: uppercase;
+}
+input.masked-text-field__input {
+   background-color: green;
+   height: 44px;
+   background: #FFFFFF;
+   border: 1px solid $DarkShade25;
+   box-sizing: border-box;
+   border-radius: 4px;
+   margin-top: 5px;
+   padding-left: 15px;
+   padding-bottom: 13px;
+   padding-top: 13px;
+   
+   color: $DarkShade75;
+   
+   outline: none;
+   
+   font-family: MontserratRegular;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 18px;
+   width: 100%;
+}
+input.masked-text-field__input::placeholder {
+   color: $DarkShade25;
+}
+input.masked-text-field__input:hover {
+   border: 1px solid $DarkShade50;
+}

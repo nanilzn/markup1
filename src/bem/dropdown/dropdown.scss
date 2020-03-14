@@ -41,11 +41,12 @@
 .dropdown__arrow {
    position: absolute;
    right: 15px;
-   top: 17px;
-   opacity: 0.5;
+   top: 18px;
+   opacity: 1.0;
 }
 .dropdown__select_expanded .dropdown__arrow {
    opacity: 1.0;
+   color: red;
 }
 .dropdown__list {
    @extend %noselect;

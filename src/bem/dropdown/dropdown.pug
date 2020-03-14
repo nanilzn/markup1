@@ -1,8 +1,12 @@
 mixin dropdown(name, defaultValue, values)
    .dropdown
       h3.dropdown__header=name
-      div.dropdown__select.dropdown__select_expanded=defaultValue
-         img(src=require('./bem/dropdown/dropdown__arrow.svg').default).dropdown__arrow
+      if values.length > 0
+         div.dropdown__select.dropdown__select_expanded=defaultValue
+            img(src=require('./bem/dropdown/dropdown__arrow.svg').default).dropdown__arrow
+      else
+         div.dropdown__select=defaultValue
+            img(src=require('./bem/dropdown/dropdown__arrow.svg').default).dropdown__arrow
       ul.dropdown__list
          each val in values
             li.dropdown__list-item
@@ -11,6 +15,7 @@ mixin dropdown(name, defaultValue, values)
                   .dropdown__counter-button.dropdown__counter-button_disabled -
                   .dropdown__counter-value 0
                   .dropdown__counter-button +
-         .dropdown__control
-            .dropdown__clear Очистить
-            .dropdown__apply Применить
+         if values.length > 0
+            .dropdown__control
+               .dropdown__clear Очистить
+               .dropdown__apply Применить

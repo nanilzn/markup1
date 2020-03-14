@@ -1,4 +1,7 @@
-mixin text-field(name)
+mixin text-field(name, placeholder="", arrow=false)
    .text-field
       h3.text-field__header=name
-      input(type="text" class="text-field__input" placeholder="Email")
+      .text-field__relative
+         input(type="text" class="text-field__input" placeholder=placeholder)
+         if arrow === true
+            img(src=require('./bem/text-field/text-field__arrow.svg').default).text-field__arrow

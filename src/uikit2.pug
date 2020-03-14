@@ -12,7 +12,7 @@ body
    .uikit-logo-wrapper
       img(src=require('./svg/logo.svg').default, alt="")
    .uikit__text-field-wrapper
-      +text-field('Text field')
+      +text-field('Text field', 'Email')
    .uikit__masked-text-field-wrapper
       +masked-text-field('Masked text field')
    .uikit__date-dropdown-wrapper-1
@@ -23,3 +23,5 @@ body
       +dropdown('Filter date dropdown', '19 авг - 23 авг', [])
    .uikit__dropdown-opened-wrapper
       +dropdown('Dropdown', 'Сколько гостей', ['взрослые', 'дети', 'младенцы'])
+   .uikit__subscription-text-field-wrapper
+      +text-field('Subscription text field', 'Email', true)

@@ -1,3 +1,5 @@
+.text-field {
+}
 .text-field__header {
    text-transform: uppercase;
 }
@@ -24,10 +26,22 @@ input.text-field__input {
    line-height: 18px;
    width: 100%;
 }
-input.text-field__input:hover::placeholder {
-   color: $DarkShade100;
-   // line-height: 24px;
+input.text-field__input::placeholder {
+   color: $DarkShade25;
 }
 input.text-field__input:hover {
    border: 1px solid $DarkShade50;
+}
+input.text-field__input:focus {
+   border: 1px solid $DarkShade50;
+}
+.text-field__relative {
+   position: relative;
+}
+.text-field__arrow { 
+   position: absolute;
+   right: 13px;
+   top: 18px;
+   height: 18px;
+   width: 18px;
 }

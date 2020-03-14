@@ -53,6 +53,12 @@
    top: 607px;
    width: 266px;
 }
+.uikit__subscription-text-field-wrapper {
+   position: absolute;
+   left: 140px;
+   top: 712px;
+   width: 267px;
+}
 
 @import './bem/text-field/text-field.scss';
 @import './bem/dropdown/dropdown.scss';

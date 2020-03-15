@@ -1,21 +1,71 @@
-mixin dropdown(name, defaultValue, values)
+mixin dropdown(name, defaultValue, entries, number)
    .dropdown
-      h3.dropdown__header=name
-      if values.length > 0
+      .dropdown__header
+         h3.dropdown__h3=name
+      if entries.length > 0
          div.dropdown__select.dropdown__select_expanded=defaultValue
-            img(src=require('./bem/dropdown/dropdown__arrow.svg').default).dropdown__arrow
+            img(src=require('./bem/dropdown/dropdown__arrow_expanded.svg').default).dropdown__arrow
       else
          div.dropdown__select=defaultValue
-            img(src=require('./bem/dropdown/dropdown__arrow.svg').default).dropdown__arrow
+            img(src=require('./bem/dropdown/dropdown__arrow.svg').default).dropdown__arrow.dropdown__arrow_active
+      if entries.length > 0
+         ul.dropdown__list
+            each val, index in entries
+               li.dropdown__list-item
+                  .dropdown__list-item-text= val
+                  .dropdown__counter
+                     .dropdown__counter-button.dropdown__counter-button_disabled -
+                     .dropdown__counter-value 0
+                     .dropdown__counter-button +
+            if entries.length > 0
+               .dropdown__control
+                  .dropdown__clear Очистить
+                  .dropdown__apply Применить
+
+mixin dropdown_default1(name, description, value)
+   .dropdown
+      .dropdown__header
+         h3.dropdown__h3=name
+         h3.dropdown__description=description
+      div.dropdown__select=value
+         img(src=require('./bem/dropdown/dropdown__arrow.svg').default).dropdown__arrow
+
+mixin dropdown_default2(name, description, value)
+   .dropdown
+      .dropdown__header
+         h3.dropdown__h3=name
+         h3.dropdown__description=description
+      div.dropdown__select.dropdown__default=value
+         img(src=require('./bem/dropdown/dropdown__arrow_expanded.svg').default).dropdown__arrow
+
+mixin dropdown_expanded(name, description, value,  entries, numbers)
+   .dropdown
+      .dropdown__header
+         h3.dropdown__h3=name
+         h3.dropdown__description=description
+      div.dropdown__select.dropdown__select_expanded=value
+         img(src=require('./bem/dropdown/dropdown__arrow_expanded.svg').default).dropdown__arrow
       ul.dropdown__list
-         each val in values
+         each val, index in entries
             li.dropdown__list-item
                .dropdown__list-item-text= val
                .dropdown__counter
                   .dropdown__counter-button.dropdown__counter-button_disabled -
-                  .dropdown__counter-value 0
+                  .dropdown__counter-value=numbers[index]
                   .dropdown__counter-button +
-         if values.length > 0
-            .dropdown__control
-               .dropdown__clear Очистить
-               .dropdown__apply Применить
+
+mixin dropdown_full(name, description, value,  entries, numbers)
+   .dropdown
+      .dropdown__header
+         h3.dropdown__h3=name
+         h3.dropdown__description=description
+      div.dropdown__select.dropdown__select_expanded=value
+         img(src=require('./bem/dropdown/dropdown__arrow_expanded.svg').default).dropdown__arrow
+      ul.dropdown__list
+         each val, index in entries
+            li.dropdown__list-item
+               .dropdown__list-item-text= val
+               .dropdown__counter
+                  .dropdown__counter-button.dropdown__counter-button_disabled -
+                  .dropdown__counter-value=numbers[index]
+                  .dropdown__counter-button +

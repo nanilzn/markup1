@@ -1,15 +1,15 @@
 @import 'style.scss';
 
-   // colors & type
-
-.colors-n-type-base {
-   min-width: 1500px;
-}
-
 .uikit-logo-wrapper {
    position: absolute;
    top: 30px;
    left: 30px;
+}
+
+   // colors & type
+
+.colors-n-type-base {
+   min-width: 1500px;
 }
 
 @import './bem/colors/colors.scss';
@@ -17,16 +17,15 @@
 
    // form elements
    
+
+.form-elements-base {
+   min-width: 1500px;
+   min-height: 2000px;
+}
 .uikit__text-field-wrapper {
 	position: absolute;
 	left: 141px;
 	top: 143px;
-   width: 320px;
-}
-.uikit__dropdown-opened-wrapper {
-   position: absolute;
-   left: 587px;
-   top: 876px;
    width: 320px;
 }
 .uikit__masked-text-field-wrapper {
@@ -58,6 +57,30 @@
    left: 140px;
    top: 712px;
    width: 267px;
+}
+.uikit__dropdown-default1-wrapper {
+   position: absolute;
+   left: 141px;
+   top: 311px;
+   width: 320px;
+}
+.uikit__dropdown-default2-wrapper {
+   position: absolute;
+   left: 140px;
+   top: 876px;
+   width: 266px;
+}
+.uikit__dropdown-expanded-wrapper {
+   position: absolute;
+   left: 140px;
+   top: 960px;
+   width: 266px;
+}
+.uikit__dropdown-opened-wrapper {
+   position: absolute;
+   left: 587px;
+   top: 876px;
+   width: 320px;
 }
 
 @import './bem/text-field/text-field.scss';

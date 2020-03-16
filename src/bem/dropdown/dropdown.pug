@@ -1,26 +1,9 @@
-mixin dropdown(name, defaultValue, entries, number)
+mixin dropdown(name, defaultValue)
    .dropdown
       .dropdown__header
          h3.dropdown__h3=name
-      if entries.length > 0
-         div.dropdown__select.dropdown__select_expanded=defaultValue
-            img(src=require('./bem/dropdown/dropdown__arrow_expanded.svg').default).dropdown__arrow
-      else
-         div.dropdown__select=defaultValue
-            img(src=require('./bem/dropdown/dropdown__arrow.svg').default).dropdown__arrow.dropdown__arrow_active
-      if entries.length > 0
-         ul.dropdown__list
-            each val, index in entries
-               li.dropdown__list-item
-                  .dropdown__list-item-text= val
-                  .dropdown__counter
-                     .dropdown__counter-button.dropdown__counter-button_disabled -
-                     .dropdown__counter-value 0
-                     .dropdown__counter-button +
-            if entries.length > 0
-               .dropdown__control
-                  .dropdown__clear Очистить
-                  .dropdown__apply Применить
+      div.dropdown__select=defaultValue
+         img(src=require('./bem/dropdown/dropdown__arrow.svg').default).dropdown__arrow.dropdown__arrow_active
 
 mixin dropdown_default1(name, description, value)
    .dropdown
@@ -43,29 +26,52 @@ mixin dropdown_expanded(name, description, value,  entries, numbers)
       .dropdown__header
          h3.dropdown__h3=name
          h3.dropdown__description=description
-      div.dropdown__select.dropdown__select_expanded=value
-         img(src=require('./bem/dropdown/dropdown__arrow_expanded.svg').default).dropdown__arrow
-      ul.dropdown__list
-         each val, index in entries
-            li.dropdown__list-item
-               .dropdown__list-item-text= val
-               .dropdown__counter
-                  .dropdown__counter-button.dropdown__counter-button_disabled -
-                  .dropdown__counter-value=numbers[index]
-                  .dropdown__counter-button +
+      .dropdown__interface
+         div.dropdown__select.dropdown__select_expanded=value
+            img(src=require('./bem/dropdown/dropdown__arrow_expanded.svg').default).dropdown__arrow
+         ul.dropdown__list
+            each val, index in entries
+               li.dropdown__list-item
+                  .dropdown__list-item-text= val
+                  .dropdown__counter
+                     .dropdown__counter-button.dropdown__counter-button_disabled -
+                     .dropdown__counter-value=numbers[index]
+                     .dropdown__counter-button +
 
-mixin dropdown_full(name, description, value,  entries, numbers)
+mixin dropdown_expanded2(name, description, value,  entries, numbers)
    .dropdown
       .dropdown__header
          h3.dropdown__h3=name
-         h3.dropdown__description=description
-      div.dropdown__select.dropdown__select_expanded=value
-         img(src=require('./bem/dropdown/dropdown__arrow_expanded.svg').default).dropdown__arrow
-      ul.dropdown__list
-         each val, index in entries
-            li.dropdown__list-item
-               .dropdown__list-item-text= val
-               .dropdown__counter
-                  .dropdown__counter-button.dropdown__counter-button_disabled -
-                  .dropdown__counter-value=numbers[index]
-                  .dropdown__counter-button +
+      .dropdown__interface
+         div.dropdown__select.dropdown__select_expanded=value
+            img(src=require('./bem/dropdown/dropdown__arrow_expanded.svg').default).dropdown__arrow
+         ul.dropdown__list
+            each val, index in entries
+               li.dropdown__list-item
+                  .dropdown__list-item-text= val
+                  .dropdown__counter
+                     .dropdown__counter-button.dropdown__counter-button_disabled -
+                     .dropdown__counter-value=numbers[index]
+                     .dropdown__counter-button +
+            .dropdown__control
+               .dropdown__clear
+               .dropdown__apply Применить
+
+mixin dropdown_expanded3(name, description, value,  entries, numbers)
+   .dropdown
+      .dropdown__header
+         h3.dropdown__h3=name
+      .dropdown__interface
+         div.dropdown__select.dropdown__select_expanded=value
+            img(src=require('./bem/dropdown/dropdown__arrow_expanded.svg').default).dropdown__arrow
+         ul.dropdown__list
+            each val, index in entries
+               li.dropdown__list-item
+                  .dropdown__list-item-text= val
+                  .dropdown__counter
+                     .dropdown__counter-button.dropdown__counter-button_disabled -
+                     .dropdown__counter-value=numbers[index]
+                     .dropdown__counter-button +
+            .dropdown__control
+               .dropdown__clear Очистить
+               .dropdown__apply Применить

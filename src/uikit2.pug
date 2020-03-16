@@ -19,16 +19,18 @@ body
       .uikit__masked-text-field-wrapper
          +masked-text-field('Masked text field')
       .uikit__date-dropdown-wrapper-1
-         +dropdown('Date dropdown', 'ДД.ММ.ГГГГ', [])
+         +dropdown('Date dropdown', 'ДД.ММ.ГГГГ')
       .uikit__date-dropdown-wrapper-2
-         +dropdown('Date dropdown', '19.08.2019', [])
+         +dropdown('Date dropdown', '19.08.2019')
       .uikit__filter-date-dropdown-wrapper
-         +dropdown('Filter date dropdown', '19 авг - 23 авг', [])
+         +dropdown('Filter date dropdown', '19 авг - 23 авг')
       .uikit__dropdown-default2-wrapper
          +dropdown_default2('Dropdown', 'Default', '2 спальни, 2 кровати...')
       .uikit__dropdown-expanded-wrapper
          +dropdown_expanded('Dropdown', 'Expanded', '2 спальни, 2 кровати...', ['спальни', 'кровати', 'ванные комнаты'], [2, 2, 0])
-      .uikit__dropdown-opened-wrapper
-         +dropdown('Dropdown', 'Сколько гостей', ['взрослые', 'дети', 'младенцы'], [0, 0, 0])
+      .uikit__dropdown-opened1-wrapper
+         +dropdown_expanded2('Dropdown', '', 'Сколько гостей', ['взрослые', 'дети', 'младенцы'], [0, 0, 0])
+      .uikit__dropdown-opened2-wrapper
+         +dropdown_expanded3('Dropdown', '', '3 гостя', ['взрослые', 'дети', 'младенцы'], [2, 1, 0])
       .uikit__subscription-text-field-wrapper
          +text-field('Subscription text field', 'Email', true)

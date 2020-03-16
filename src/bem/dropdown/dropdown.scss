@@ -1,6 +1,9 @@
 .dropdown {
    
 }
+.dropdown__interface {
+   box-shadow: 0px 10px 20px $DarkShade5;
+}
 .dropdown__header {
    display: flex;
    text-transform: uppercase;

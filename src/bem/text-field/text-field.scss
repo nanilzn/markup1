@@ -2,6 +2,17 @@
 }
 .text-field__header {
    text-transform: uppercase;
+   display: flex;
+   justify-content: space-between;
+}
+.text-field__description {
+   font-family: MontserratRegular;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 12px;
+   line-height: 15px;
+
+   color: $DarkShade50;
 }
 input.text-field__input {
    background-color: green;
@@ -34,6 +45,18 @@ input.text-field__input:hover {
 }
 input.text-field__input:focus {
    border: 1px solid $DarkShade50;
+}
+input.text-field__input:hover::placeholder {
+   color: $DarkShade75;
+}
+input.text-field__input:focus::placeholder {
+   color: $DarkShade75;
+}
+input.text-field_always-active {
+   border: 1px solid $DarkShade50;
+}
+input.text-field_always-active::placeholder {
+   color: $DarkShade75;
 }
 .text-field__relative {
    position: relative;

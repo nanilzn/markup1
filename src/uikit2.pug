@@ -13,7 +13,9 @@ body
       .uikit-logo-wrapper
          img(src=require('./svg/logo.svg').default, alt="")
       .uikit__text-field-wrapper
-         +text-field('Text field', 'Email')
+         +text-field('Text field', 'Default', 'Email')
+      .uikit__text-field-hover-wrapper
+         +text-field_hover('Text field', 'Hover / Focus', 'This is pretty awesome')
       .uikit__dropdown-default1-wrapper
          +dropdown_default1('Dropdown', 'Default', 'Сколько гостей')
       .uikit__masked-text-field-wrapper
@@ -33,4 +35,4 @@ body
       .uikit__dropdown-opened2-wrapper
          +dropdown_expanded3('Dropdown', '', '3 гостя', ['взрослые', 'дети', 'младенцы'], [2, 1, 0])
       .uikit__subscription-text-field-wrapper
-         +text-field('Subscription text field', 'Email', true)
+         +text-field('Subscription text field', '', 'Email', true)

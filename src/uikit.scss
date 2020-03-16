@@ -23,9 +23,15 @@
    min-height: 2000px;
 }
 .uikit__text-field-wrapper {
-	position: absolute;
-	left: 141px;
-	top: 143px;
+   position: absolute;
+   left: 141px;
+   top: 143px;
+   width: 320px;
+}
+.uikit__text-field-hover-wrapper {
+   position: absolute;
+   left: 141px;
+   top: 227px;
    width: 320px;
 }
 .uikit__masked-text-field-wrapper {

@@ -94,7 +94,14 @@
    top: 876px;
    width: 320px;
 }
+.uikit__checkbox-buttons-wrapper {
+   position: absolute;
+   left: 587px;
+   top: 143px;
+   width: 240px;
+}
 
 @import './bem/text-field/text-field.scss';
 @import './bem/dropdown/dropdown.scss';
 @import './bem/masked-text-field/masked-text-field.scss';
+@import './bem/checkbox-buttons/checkbox-buttons.scss';

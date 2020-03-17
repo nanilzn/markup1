@@ -8,6 +8,7 @@ body
    include bem/text-field/text-field.pug
    include bem/masked-text-field/masked-text-field.pug
    include bem/dropdown/dropdown.pug
+   include bem/checkbox-buttons/checkbox-buttons.pug
    
    .form-elements-base
       .uikit-logo-wrapper
@@ -36,3 +37,8 @@ body
          +dropdown_expanded3('Dropdown', '', '3 гостя', ['взрослые', 'дети', 'младенцы'], [2, 1, 0])
       .uikit__subscription-text-field-wrapper
          +text-field('Subscription text field', '', 'Email', true)
+      .uikit__checkbox-buttons-wrapper
+         +checkbox-buttons('Checkbox buttons')
+            +checkbox-buttons__row('checkbox1', 'checkbox1', 'Можно курить')
+            +checkbox-buttons__row('checkbox2', 'checkbox2', 'Можно с питомцами', true)
+            +checkbox-buttons__row('checkbox3', 'checkbox3', 'Можно пригласить гостей (до 10 человек)', true)

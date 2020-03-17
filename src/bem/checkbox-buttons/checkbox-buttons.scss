@@ -1,0 +1,70 @@
+.checkbox-buttons__rows {
+   margin-top: 17px;
+}
+.checkbox-buttons__row {
+   display: flex;
+   margin-top: 11px;
+}
+.checkbox-buttons__checkbox {
+   opacity: 0;
+}
+.checkbox-buttons__label {
+   margin-left: 10px;
+   position: relative;
+   
+   font-family: MontserratRegular;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 18px;
+   
+   color: $DarkShade50;
+
+}
+
+   // checkbox border
+
+label.checkbox-buttons__label::before{
+   position: absolute;
+   left: -30px;
+   content: "";
+   display: inline-block;
+   height: 20px;
+   width: 20px;
+   border: 1px solid;
+   
+   background: #FFFFFF;
+
+   border: 1px solid $DarkShade25;
+   box-sizing: border-box;
+   border-radius: 4px;
+}
+
+   // checkbox flag
+
+label.checkbox-buttons__label::after {
+   position: absolute;
+   left: -25px;
+   top: 6px;
+   content: "";
+   display: inline-block;
+   height: 9px;
+   width: 10px;
+   
+   background-image: url('./bem/checkbox-buttons/checkbox-buttons__flag.svg');
+}
+
+   // make checkbox flag visible when element is checked
+
+input[type="checkbox"].checkbox-buttons__checkbox + label::after {
+    content: none;
+}
+input[type="checkbox"].checkbox-buttons__checkbox:checked + label::after {
+    content: "";
+}
+
+   // border is purple when checked
+
+input[type="checkbox"].checkbox-buttons__checkbox:checked + label::before {
+    border-color: $Purple;
+}

@@ -9,6 +9,7 @@ body
    include bem/masked-text-field/masked-text-field.pug
    include bem/dropdown/dropdown.pug
    include bem/checkbox-buttons/checkbox-buttons.pug
+   include bem/radio-buttons/radio-buttons.pug
    
    .form-elements-base
       .uikit-logo-wrapper
@@ -42,3 +43,6 @@ body
             +checkbox-buttons__row('checkbox1', 'checkbox1', 'Можно курить')
             +checkbox-buttons__row('checkbox2', 'checkbox2', 'Можно с питомцами', true)
             +checkbox-buttons__row('checkbox3', 'checkbox3', 'Можно пригласить гостей (до 10 человек)', true)
+      .uikit__radio-buttons-wrapper
+         +radio-buttons('Radio buttons')
+            +radio-buttons__row('gender', 'maleID', 'male', 'femaleID', 'female', 'Мужчина', 'Женщина')

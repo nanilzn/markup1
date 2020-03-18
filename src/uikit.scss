@@ -100,8 +100,15 @@
    top: 143px;
    width: 240px;
 }
+.uikit__radio-buttons-wrapper {
+   position: absolute;
+   left: 587px;
+   top: 313px;
+   width: 240px;
+}
 
 @import './bem/text-field/text-field.scss';
 @import './bem/dropdown/dropdown.scss';
 @import './bem/masked-text-field/masked-text-field.scss';
 @import './bem/checkbox-buttons/checkbox-buttons.scss';
+@import './bem/radio-buttons/radio-buttons.scss';

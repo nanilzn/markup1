@@ -1,0 +1,79 @@
+.radio-buttons__rows {
+   margin-top: 17px;
+}
+.radio-buttons__row {
+   display: flex;
+   margin-top: 11px;
+}
+.radio-buttons__circle {
+   opacity: 0;
+}
+.radio-buttons__circle:not(:first-child) {
+   margin-left: 25px;
+}
+.radio-buttons__label {
+   margin-left: 9px;
+   position: relative;
+   
+   font-family: MontserratRegular;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 18px;
+   
+   color: $DarkShade50;
+}
+
+   // radio border
+
+label.radio-buttons__label::before{
+   position: absolute;
+   left: -30px;
+   top: -1px;
+   content: "";
+   display: inline-block;
+   height: 20px;
+   width: 20px;
+   border: 1px solid;
+
+   background: #FFFFFF;
+
+   border: 1px solid $DarkShade25;
+   box-sizing: border-box;
+   border-radius: 10px;
+}
+
+   // radio circle
+
+label.radio-buttons__label::after {
+   position: absolute;
+   left: -26px;
+   top: 3px;
+   content: "";
+   display: inline-block;
+   height: 12px;
+   width: 12px;
+   
+   background-image: url('./bem/radio-buttons/radio-buttons__circle.svg');
+}
+
+   // make radio flag visible when element is checked
+
+input[type="radio"].radio-buttons__circle + label.radio-buttons__label::after {
+   content: none;
+}
+input[type="radio"].radio-buttons__circle:checked + label::after {
+   content: "";
+}
+
+   // border is purple when selected
+
+input[type="radio"].radio-buttons__circle:checked + label::before {
+   border-color: $Purple;
+}
+
+  // text is darker when selected
+  
+input[type="radio"].radio-buttons__circle:checked + label {
+   color: $DarkShade75;
+}

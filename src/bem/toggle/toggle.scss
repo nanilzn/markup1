@@ -1,0 +1,93 @@
+.toggle__rows {
+   margin-top: 17px;
+}
+.toggle__row {
+   display: flex;
+   margin-top: 11px;
+}
+.toggle__row:not(:first-child) {
+   margin-top: 15px;
+}
+.toggle__checkbox {
+   opacity: 0;
+}
+.toggle__checkbox:not(:first-child) {
+   margin-left: 25px;
+}
+.toggle__label {
+   margin-left: 30px;
+   position: relative;
+   
+   font-family: MontserratRegular;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 18px;
+   
+   color: $DarkShade75;
+}
+
+   // toggle border
+
+label.toggle__label::before{
+   position: absolute;
+   left: -50px;
+   content: "";
+   display: inline-block;
+   height: 20px;
+   width: 40px;
+   border: 1px solid;
+
+   background: #FFFFFF;
+
+   border: 1px solid $DarkShade25;
+   box-sizing: border-box;
+   border-radius: 10px;
+}
+
+   // toggle circle
+
+label.toggle__label::after {
+   position: absolute;
+   left: -26px;
+   top: 4px;
+   content: "";
+   display: inline-block;
+   height: 12px;
+   width: 12px;
+   background-color: $DarkShade25;
+   border-radius: 6px;
+   
+   background-image: url('./bem/toggle/toggle__circle.svg');
+}
+
+   // make radio flag visible when element is checked
+
+input[type="checkbox"].toggle__checkbox + label.toggle__label::after {
+   left: -46px;
+   background-image: none;
+   transition: .5s;
+}
+input[type="checkbox"].toggle__checkbox:checked + label::after {
+   content: "";
+   background-image: url('./bem/toggle/toggle__circle.svg');
+   left: -26px;
+   transition: .5s;
+}
+
+   // border is purple when selected
+
+input[type="checkbox"].toggle__checkbox + label::before {
+   border-color: $DarkShade25;
+   transition: .5s;
+}
+input[type="checkbox"].toggle__checkbox:checked + label::before {
+   border-color: $Purple;
+   transition: .5s;
+}
+
+  // text is darker when selected
+
+input[type="checkbox"].toggle__checkbox:checked + label {
+   color: $DarkShade75;
+}

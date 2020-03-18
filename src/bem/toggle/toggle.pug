@@ -1,0 +1,14 @@
+mixin toggle(header)
+   .toggle
+      h3=header
+      .radio-buttons__rows
+         if block
+            block
+
+mixin toggle__row(name, id, label, checked=false)
+   .toggle__row
+      if checked == false
+         input(type="checkbox" id=id name=name).toggle__checkbox
+      else
+         input(type="checkbox" id=id name=name checked).toggle__checkbox
+      label(for=id).toggle__label=label

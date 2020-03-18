@@ -10,6 +10,7 @@ body
    include bem/dropdown/dropdown.pug
    include bem/checkbox-buttons/checkbox-buttons.pug
    include bem/radio-buttons/radio-buttons.pug
+   include bem/toggle/toggle.pug
    
    .form-elements-base
       .uikit-logo-wrapper
@@ -46,3 +47,7 @@ body
       .uikit__radio-buttons-wrapper
          +radio-buttons('Radio buttons')
             +radio-buttons__row('gender', 'maleID', 'male', 'femaleID', 'female', 'Мужчина', 'Женщина')
+      .uikit__toggle-wrapper
+         +toggle('Toggle')
+            +toggle__row('offers', 'offersID', 'Получать спецпредложения', true)
+            +toggle__row('offers2', 'offersID2', 'Получать спецпредложения')

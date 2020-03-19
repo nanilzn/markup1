@@ -1,0 +1,55 @@
+.like-button {
+   position: relative;
+   width: 40px;
+   height: 20px;
+   content: "";
+}
+.like-button__border {
+   position: absolute;
+   width: 40px;
+   height: 20px;
+   z-index: -1;
+}
+.like-button__heart {
+   position: absolute;
+   left: 5px;
+   top: 6px;
+   width: 10px;
+   height: 8px;
+   z-index: -1;
+}
+.like-button__value {
+   position: relative;
+   margin-left: calc(29px - 100% / 2);
+   bottom: 2px;
+
+   font-family: MontserratRegular;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 10px;
+   // line-height: 12px;
+   /* identical to box height */
+   
+   cursor: default;
+   text-align: center;
+   
+   color: $Purple;
+}
+.like-button_inactive .like-button__value {
+   color: $DarkShade25;
+}
+.like-button_active .like-button__value {
+   color: $Purple;
+}
+.like-button_inactive .like-button__border {
+   background-image: url('./bem/like-button/like-button__border_inactive.svg');
+}
+.like-button_active .like-button__border {
+   background-image: url('./bem/like-button/like-button__border_active.svg');
+}
+.like-button_inactive .like-button__heart {
+   background-image: url('./bem/like-button/like-button__heart_inactive.svg');
+}
+.like-button_active .like-button__heart {
+   background-image: url('./bem/like-button/like-button__heart_active.svg');
+}

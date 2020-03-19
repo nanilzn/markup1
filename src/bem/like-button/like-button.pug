@@ -1,0 +1,11 @@
+mixin like_button(value, active=false)
+   if active == false
+      .like-button.like-button_inactive
+         .like-button__border
+         .like-button__value=value
+         .like-button__heart
+   else
+      .like-button.like-button_active
+         .like-button__border
+         .like-button__value=value
+         .like-button__heart

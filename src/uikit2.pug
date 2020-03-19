@@ -11,6 +11,7 @@ body
    include bem/checkbox-buttons/checkbox-buttons.pug
    include bem/radio-buttons/radio-buttons.pug
    include bem/toggle/toggle.pug
+   include bem/like-button/like-button.pug
    
    .form-elements-base
       .uikit-logo-wrapper
@@ -51,3 +52,10 @@ body
          +toggle('Toggle')
             +toggle__row('offers', 'offersID', 'Получать спецпредложения', true)
             +toggle__row('offers2', 'offersID2', 'Получать спецпредложения')
+      .uikit__like-button-wrapper
+         h3 Like button
+         .uikit__like-button-row
+            +like_button('2')
+            +like_button('12', true)
+         .uikit__like-button-row
+            +like_button('88')

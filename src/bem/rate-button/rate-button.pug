@@ -1,0 +1,9 @@
+mixin rate_button(starNumber=5, rating=5)
+   .rate-button
+      - var i = 0;
+      while i < starNumber
+         if i < rating
+            img(src=require('./bem/rate-button/rate-button__star_enabled.svg').default).rate-button__star
+         else
+            img(src=require('./bem/rate-button/rate-button__star_disabled.svg').default).rate-button__star
+         - i++

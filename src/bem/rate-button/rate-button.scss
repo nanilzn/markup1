@@ -1,0 +1,12 @@
+.rate-button {
+   display: flex;
+   justify-content: space-around;
+}
+.rate-button__star {
+   margin: 0 2px;
+}
+.rate-button__star {
+   width: 20px;
+   height: 20px;
+   content: "";
+}

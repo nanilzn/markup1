@@ -123,6 +123,17 @@
    display: flex;
    justify-content: space-between;
 }
+.uikit__rate-button-wrapper {
+   position: absolute;
+   left: 587px;
+   top: 625px;
+   width: 260px;
+}
+.uikit__rate-button-row {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 17px;
+}
 
 @import './bem/text-field/text-field.scss';
 @import './bem/dropdown/dropdown.scss';
@@ -131,3 +142,4 @@
 @import './bem/radio-buttons/radio-buttons.scss';
 @import './bem/toggle/toggle.scss';
 @import './bem/like-button/like-button.scss';
+@import './bem/rate-button/rate-button.scss';

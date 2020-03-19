@@ -12,6 +12,7 @@ body
    include bem/radio-buttons/radio-buttons.pug
    include bem/toggle/toggle.pug
    include bem/like-button/like-button.pug
+   include bem/rate-button/rate-button.pug
    
    .form-elements-base
       .uikit-logo-wrapper
@@ -57,5 +58,8 @@ body
          .uikit__like-button-row
             +like_button('2')
             +like_button('12', true)
-         .uikit__like-button-row
-            +like_button('88')
+      .uikit__rate-button-wrapper
+         h3 Rate button
+         .uikit__rate-button-row
+            +rate_button(5, 4)
+            +rate_button()

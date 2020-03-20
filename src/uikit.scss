@@ -134,6 +134,12 @@
    justify-content: space-between;
    margin-top: 17px;
 }
+.uikit__range-slider-wrapper {
+   position: absolute;
+   left: 979px;
+   top: 143px;
+   width: 266px;
+}
 
 @import './bem/text-field/text-field.scss';
 @import './bem/dropdown/dropdown.scss';
@@ -143,3 +149,4 @@
 @import './bem/toggle/toggle.scss';
 @import './bem/like-button/like-button.scss';
 @import './bem/rate-button/rate-button.scss';
+@import './bem/range-slider/range-slider.scss';

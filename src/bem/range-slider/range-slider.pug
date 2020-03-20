@@ -1,0 +1,10 @@
+mixin range_slider(header="Range slider", description="5 000₽ - 10 000₽")
+   .range-slider__wrapper
+      .range-slider__header
+         h3=header
+         .range-slider__description=description
+      .range-slider
+         .range-slider__empty-line
+         .range-slider__filled-line(style!=attributes.filled)
+         .range-slider__start(style!=attributes.start)
+         .range-slider__end(style!=attributes.end)

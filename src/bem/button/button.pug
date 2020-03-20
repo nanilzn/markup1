@@ -1,0 +1,23 @@
+mixin button_primary(text)
+   button.button.button_primary=text
+
+mixin button_primary_disabled(text)
+   button.button.button_primary.button_disabled=text
+
+mixin button_light(text)
+   button.button.button_light=text
+      .button_light_border
+
+mixin button_light_disabled(text)
+   button.button.button_light=text
+      .button_light_border.button_disabled
+
+mixin button_simple(text)
+   button.button.button_simple=text
+
+mixin button_simple_disabled(text)
+   button.button.button_simple.button_simple_disabled=text
+
+mixin button_arrow(text)
+   button.button.button_arrow=text
+      img(src=require('./bem/button/button__arrow.svg').default).button_arrow_svg

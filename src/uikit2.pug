@@ -14,6 +14,7 @@ body
    include bem/like-button/like-button.pug
    include bem/rate-button/rate-button.pug
    include bem/range-slider/range-slider.pug
+   include bem/button/button.pug
    
    .form-elements-base
       .uikit-logo-wrapper
@@ -66,3 +67,22 @@ body
             +rate_button()
       .uikit__range-slider-wrapper
          +range_slider('Range slider', '5 000₽ - 10 000₽')(start='left: calc(31%);' end='left: calc(62.7%)' filled='margin-left: calc(31); width: calc(31%)')
+      .uikit__buttons-wrapper
+         h3 Buttons
+         .uikit__buttons-row1
+            .uikit__button-wrapper
+               +button_primary('click me')
+            .uikit__button-wrapper
+               +button_primary_disabled('click me')
+         .uikit__buttons-row2
+            .uikit__button-wrapper
+               +button_light('click me')
+            .uikit__button-wrapper
+               +button_light_disabled('click me')
+         .uikit__buttons-row3
+            .uikit__button-wrapper
+               +button_simple('click me')
+            .uikit__button-wrapper
+               +button_simple_disabled('click me')
+         .uikit__buttons-row4
+            +button_arrow('Перейти к оплате')

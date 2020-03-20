@@ -140,6 +140,33 @@
    top: 143px;
    width: 266px;
 }
+.uikit__buttons-wrapper {
+   position: absolute;
+   display: flex;
+   flex-direction: column;
+   left: 979px;
+   top: 231px;
+   width: 320px;
+}
+.uikit__buttons-row1 {
+   display: flex;
+   margin-top: 16px;
+}
+.uikit__buttons-row2 {
+   display: flex;
+   margin-top: 30px;
+}
+.uikit__buttons-row3 {
+   display: flex;
+   margin-top: 26px;
+}
+.uikit__buttons-row4 {
+   display: flex;
+   margin-top: 26px;
+}
+.uikit__button-wrapper {
+   margin-right: 20px;
+}
 
 @import './bem/text-field/text-field.scss';
 @import './bem/dropdown/dropdown.scss';
@@ -150,3 +177,4 @@
 @import './bem/like-button/like-button.scss';
 @import './bem/rate-button/rate-button.scss';
 @import './bem/range-slider/range-slider.scss';
+@import './bem/button/button.scss';

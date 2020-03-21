@@ -17,6 +17,7 @@ body
    include bem/button/button.pug
    include bem/pagination/pagination.pug
    include bem/expandable-checkbox-list/expandable-checkbox-list.pug
+   include bem/feature-list/feature-list.pug
    
    .form-elements-base
       .uikit-logo-wrapper
@@ -103,3 +104,7 @@ body
             +expandable-checkbox-list_row('ecl_id6', 'ecl_checkbox6', 'Шампунь', false)
             +expandable-checkbox-list_row('ecl_id7', 'ecl_checkbox7', 'Телевизор', false)
             +expandable-checkbox-list_row('ecl_id8', 'ecl_checkbox8', 'Шампунь', false)
+      .uikit__feature-list-wrapper
+         +feature-list()
+            +feature-list__row(require('./bem/feature-list/feature-list__smile.svg').default, 'Комфорт', 'Шумопоглощающие стены')
+            +feature-list__row(require('./bem/feature-list/feature-list__house.svg').default, 'Удобство', 'Окно в каждой из спален')

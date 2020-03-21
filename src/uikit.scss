@@ -194,6 +194,12 @@
    top: 1260px;
    width: 266px;
 }
+.uikit__feature-list-wrapper {
+   position: absolute;
+   display: flex;
+   left: 140px;
+   top: 1543px;
+}
 
 
 @import './bem/text-field/text-field.scss';
@@ -208,3 +214,4 @@
 @import './bem/button/button.scss';
 @import './bem/pagination/pagination.scss';
 @import './bem/expandable-checkbox-list/expandable-checkbox-list.scss';
+@import './bem/feature-list/feature-list.scss';

@@ -1,0 +1,14 @@
+mixin feature-list(header)
+   .feature-list
+      if header
+         h3=header
+      if block
+         block
+
+mixin feature-list__row(svg, header, description)
+   .feature-list__row
+      .feature-list__svg-wrapper
+         img(src=svg)
+      .feature-list__text
+         h3.feature-list__header=header
+         div=description

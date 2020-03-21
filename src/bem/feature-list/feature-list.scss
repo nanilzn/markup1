@@ -1,0 +1,36 @@
+.feature-list {
+   display: flex;
+   flex-direction: column;
+}
+.feature-list__row {
+   display: flex;
+   width: 280px;
+   border-bottom: 1px solid $DarkShade10;
+}
+.feature-list__header {
+   font-family: MontserratBold;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 14px;
+   line-height: 24px;
+   
+   text-transform: none;
+
+   color: $DarkShade75;
+}
+.feature-list__text {
+   display: flex;
+   flex-direction: column;
+   -webkit-justify-content: center;
+           justify-content: center;
+}
+.feature-list__svg-wrapper {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   margin: 20px 0px;
+   margin-right: 10px;
+   width: 48px;
+   height: 48px;
+}

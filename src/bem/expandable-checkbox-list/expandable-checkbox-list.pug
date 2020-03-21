@@ -1,0 +1,22 @@
+mixin expandable-checkbox-list(header='expandable checkbox list')
+   .expandable-checkbox-list
+      .expandable-checkbox-list__header
+         h3=header
+         img(src=require('./bem/expandable-checkbox-list/expandable-checkbox-list__arrow-down.svg').default).expandable-checkbox-list__arrow
+
+mixin expandable-checkbox-list_opened(header='expandable checkbox list')
+   .expandable-checkbox-list
+      .expandable-checkbox-list__header
+         h3=header
+         img(src=require('./bem/expandable-checkbox-list/expandable-checkbox-list__arrow-up.svg').default).expandable-checkbox-list__arrow
+      .expandable-checkbox-list__rows
+         if block
+            block
+
+mixin expandable-checkbox-list_row(id, name, label, checked=false)
+   .expandable-checkbox-list__row
+      if checked == false
+         input(type='checkbox' id=id name=name).expandable-checkbox-list__checkbox
+      else
+         input(type='checkbox' id=id name=name checked).expandable-checkbox-list__checkbox
+      label(for=id).expandable-checkbox-list__label=label

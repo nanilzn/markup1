@@ -1,0 +1,55 @@
+.pagination {
+   display: flex;
+   flex-direction: column;
+}
+.pagination__page-list {
+   @extend %noselect;
+
+   list-style: none;
+   display: flex;
+   margin: 0;
+   padding: 0;
+}
+li.pagination__list-item {
+   width: 40px;
+   height: 40px;
+   text-align: center;
+   line-height: 40px;
+
+   font-family: MontserratRegular;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 12px;
+   text-align: center;
+   color: $DarkShade50;
+   
+   cursor: pointer;
+}
+li.pagination__list-item_active {
+   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+   border-radius: 22px;
+   
+   font-family: MontserratBold;
+   font-style: normal;
+   font-weight: normal;
+   color: white;
+}
+li.pagination__list-item_next {
+   background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+   border-radius: 22px;
+}
+.pagination__arrow {
+   vertical-align: middle;
+}
+.pagination__description {
+   text-align: center;
+   margin-top: 8px;
+
+   font-family: MontserratRegular;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 24px;
+
+   color: $DarkShade75;
+}

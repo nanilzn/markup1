@@ -1,0 +1,11 @@
+mixin pagination(description='description')
+   .pagination
+      ul.pagination__page-list
+         li.pagination__list-item.pagination__list-item_active 1
+         li.pagination__list-item 2
+         li.pagination__list-item 3
+         li.pagination__list-item ...
+         li.pagination__list-item 15
+         li.pagination__list-item.pagination__list-item_next
+            img(src=require('./bem/pagination/pagination__next.svg').default).pagination__arrow
+      .pagination__description=description

@@ -15,6 +15,7 @@ body
    include bem/rate-button/rate-button.pug
    include bem/range-slider/range-slider.pug
    include bem/button/button.pug
+   include bem/pagination/pagination.pug
    
    .form-elements-base
       .uikit-logo-wrapper
@@ -86,3 +87,6 @@ body
                +button_simple_disabled('click me')
          .uikit__buttons-row4
             +button_arrow('Перейти к оплате')
+      .uikit__pagination-wrapper
+         h3.uikit__pagination-h3 Pagination
+         +pagination('1 – 12 из 100+ вариантов аренды')

@@ -19,6 +19,7 @@ body
    include bem/expandable-checkbox-list/expandable-checkbox-list.pug
    include bem/feature-list/feature-list.pug
    include bem/rich-checkbox-buttons/rich-checkbox-buttons.pug
+   include bem/bullet-list/bullet-list.pug
    
    .form-elements-base
       .uikit-logo-wrapper
@@ -113,3 +114,6 @@ body
          +rich-checkbox-buttons('Rich checkbox buttons')
             +rich-checkbox-buttons__row('rcb_id1', 'rcb_checkbox1', 'Широкий коридор', 'Ширина коридоров в номере не менее 91 см.', false)
             +rich-checkbox-buttons__row('rcb_id2', 'rcb_checkbox2', 'Помощник для инвалидов', 'На 1 этаже вас встретит специалист  и проводит до номера.', true)
+      .uikit__bullet-list-wrapper
+         h3.uikit__bullet-list-header Bullet list
+         +bullet-list('Нельзя с питомцами', 'Без вечеринок и мероприятий', 'Время прибытия — после 13:00, а выезд до 12:00')

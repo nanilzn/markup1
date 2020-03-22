@@ -207,6 +207,17 @@
    top: 1196px;
    width: 264px;
 }
+.uikit__bullet-list-wrapper {
+   position: absolute;
+   display: flex;
+   flex-direction: column;
+   left: 979px;
+   top: 1196px;
+   width: 320px;
+}
+.uikit__bullet-list-header {
+   margin-bottom: 14px;
+}
 
 
 @import './bem/text-field/text-field.scss';
@@ -223,3 +234,4 @@
 @import './bem/expandable-checkbox-list/expandable-checkbox-list.scss';
 @import './bem/feature-list/feature-list.scss';
 @import './bem/rich-checkbox-buttons/rich-checkbox-buttons.scss';
+@import './bem/bullet-list/bullet-list.scss';

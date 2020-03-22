@@ -1,0 +1,14 @@
+mixin rich-checkbox-buttons(header)
+   .rich-checkbox-buttons
+      h3.rich-checkbox-buttons__header=header
+      if block
+         block
+
+mixin rich-checkbox-buttons__row(id, name, header, description, checked=false)
+   .rich-checkbox-buttons__row
+      if checked == false
+         input(type='checkbox' id=id name=name).rich-checkbox-buttons__checkbox
+      else
+         input(type='checkbox' id=id name=name checked).rich-checkbox-buttons__checkbox
+      label(for=id).rich-checkbox-buttons__label=header
+         div.rich-checkbox-buttons__description=description

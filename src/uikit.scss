@@ -200,6 +200,13 @@
    left: 140px;
    top: 1543px;
 }
+.uikit__rich-checkbox-buttons-wrapper {
+   position: absolute;
+   display: flex;
+   left: 587px;
+   top: 1196px;
+   width: 264px;
+}
 
 
 @import './bem/text-field/text-field.scss';
@@ -215,3 +222,4 @@
 @import './bem/pagination/pagination.scss';
 @import './bem/expandable-checkbox-list/expandable-checkbox-list.scss';
 @import './bem/feature-list/feature-list.scss';
+@import './bem/rich-checkbox-buttons/rich-checkbox-buttons.scss';

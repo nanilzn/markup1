@@ -18,6 +18,7 @@ body
    include bem/pagination/pagination.pug
    include bem/expandable-checkbox-list/expandable-checkbox-list.pug
    include bem/feature-list/feature-list.pug
+   include bem/rich-checkbox-buttons/rich-checkbox-buttons.pug
    
    .form-elements-base
       .uikit-logo-wrapper
@@ -108,3 +109,7 @@ body
          +feature-list()
             +feature-list__row(require('./bem/feature-list/feature-list__smile.svg').default, 'Комфорт', 'Шумопоглощающие стены')
             +feature-list__row(require('./bem/feature-list/feature-list__house.svg').default, 'Удобство', 'Окно в каждой из спален')
+      .uikit__rich-checkbox-buttons-wrapper
+         +rich-checkbox-buttons('Rich checkbox buttons')
+            +rich-checkbox-buttons__row('rcb_id1', 'rcb_checkbox1', 'Широкий коридор', 'Ширина коридоров в номере не менее 91 см.', false)
+            +rich-checkbox-buttons__row('rcb_id2', 'rcb_checkbox2', 'Помощник для инвалидов', 'На 1 этаже вас встретит специалист  и проводит до номера.', true)

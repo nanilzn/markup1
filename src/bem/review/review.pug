@@ -1,10 +1,10 @@
-mixin review()
+mixin review(image, name, date, content, likeNumber, likeButtonPressed=true)
    .review
       .review__media
-         img(src=require('./images/expert.png').default).review__img
+         img(src=image).review__img
          .review__like-wrapper
-            +like_button(12, true)
+            +like_button(likeNumber, likeButtonPressed)
       .review__info
-         h3.review__name Мурад Сарафанов
-         .review__date 5 дней назад
-         .review__content Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.
+         h3.review__name=name
+         .review__date=date
+         .review__content=content

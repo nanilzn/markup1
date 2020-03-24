@@ -226,6 +226,19 @@
    width: 750px;
 }
 
+   // cards
+
+.cards-base {
+   width: 1500px;
+   height: 1500px;
+   background-color: #F4F4F6;
+}
+.cards__apartment-search-wrapper {
+   position: absolute;
+   left: 140px;
+   top: 150px;
+   width: 380px;
+}
 
 @import './bem/text-field/text-field.scss';
 @import './bem/dropdown/dropdown.scss';
@@ -243,3 +256,5 @@
 @import './bem/rich-checkbox-buttons/rich-checkbox-buttons.scss';
 @import './bem/bullet-list/bullet-list.scss';
 @import './bem/review/review.scss';
+
+@import './bem/apartment-search-card/apartment-search-card.scss';

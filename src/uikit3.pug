@@ -1,0 +1,30 @@
+html
+head
+   meta(charset="UTF-8")
+   title Document
+   link(rel="stylesheet" href="style.css")
+body
+
+   include bem/text-field/text-field.pug
+   include bem/masked-text-field/masked-text-field.pug
+   include bem/dropdown/dropdown.pug
+   include bem/checkbox-buttons/checkbox-buttons.pug
+   include bem/radio-buttons/radio-buttons.pug
+   include bem/toggle/toggle.pug
+   include bem/like-button/like-button.pug
+   include bem/rate-button/rate-button.pug
+   include bem/range-slider/range-slider.pug
+   include bem/button/button.pug
+   include bem/pagination/pagination.pug
+   include bem/expandable-checkbox-list/expandable-checkbox-list.pug
+   include bem/feature-list/feature-list.pug
+   include bem/rich-checkbox-buttons/rich-checkbox-buttons.pug
+   include bem/bullet-list/bullet-list.pug
+
+   include bem/apartment-search-card/apartment-search-card.pug
+   
+   .cards-base
+      .uikit-logo-wrapper
+         img(src=require('./svg/logo.svg').default, alt="")
+      .cards__apartment-search-wrapper
+         +apartment-search-card()

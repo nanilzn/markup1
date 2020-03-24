@@ -40,6 +40,24 @@
        url(fonts/Quicksand-Bold.svg);
 }
 
+@font-face {
+  font-family: OpenSans;
+  src: url(fonts/OpenSans-Bold.ttf),
+       url(fonts/OpenSans-Bold.woff),
+       url(fonts/OpenSans-Bold.svg);
+  font-weight: bold;
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(fonts/OpenSans-Regular.ttf),
+       url(fonts/OpenSans-Regular.woff),
+       url(fonts/OpenSans-Regular.svg);
+  font-weight: 400;
+  font-style: normal; 
+}
+
 $DarkShade100: #1F2041;
 $DarkShade75: rgba(31, 32, 65, 0.75);
 $DarkShade50: rgba(31, 32, 65, 0.5);
@@ -56,31 +74,37 @@ body {
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
+  
+  margin: 0;
+  padding: 0;
+
   /* or 171% */
   
   color: $DarkShade75;
 }
 
 h1 {
-  font-family: QuicksandBold;
+  font-family: QuicksandBold, OpenSans;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
   color: $DarkShade100;
+  
+  margin: 0;
+  padding: 0;
 }
 
 h2 {
-
-  margin: 0;
-  padding: 0;
-
-  font-family: QuicksandBold;
+  font-family: QuicksandBold, OpenSans;
   font-style: normal;
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
   color: $DarkShade100;
+  
+  margin: 0;
+  padding: 0;
 }
 
 h3 {

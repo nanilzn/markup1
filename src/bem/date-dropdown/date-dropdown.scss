@@ -2,7 +2,7 @@
    display: flex;
 }
 .date-dropdown__col {
-   flex-grow: 1;
+   width: 150px;
 }
 .date-dropdown__col:not(:first-child) {
    margin-left: 20px;

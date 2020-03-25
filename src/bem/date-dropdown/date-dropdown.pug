@@ -1,0 +1,12 @@
+mixin date-dropdown(name1='date dropdown', defaultValue1='ДД.ММ.ГГГГ', name2='date dropdown', defaultValue2='ДД.ММ.ГГГГ')
+   .date-dropdown
+      .date-dropdown__col
+         .date-dropdown__header
+            h3.date-dropdown__h3=name1
+         div.date-dropdown__select=defaultValue1
+            img(src=require('./bem/date-dropdown/date-dropdown__arrow.svg').default).date-dropdown__arrow.date-dropdown__arrow_active
+      .date-dropdown__col
+         .date-dropdown__header
+            h3.date-dropdown__h3=name2
+         div.date-dropdown__select=defaultValue2
+            img(src=require('./bem/date-dropdown/date-dropdown__arrow.svg').default).date-dropdown__arrow.date-dropdown__arrow_active

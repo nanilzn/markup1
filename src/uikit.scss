@@ -40,17 +40,11 @@
    top: 398px;
    width: 320px;
 }
-.uikit__date-dropdown-wrapper-1 {
+.uikit__date-dropdown-wrapper {
    position: absolute;
    left: 141px;
    top: 502px;
-   width: 150px;
-}
-.uikit__date-dropdown-wrapper-2 {
-   position: absolute;
-   left: 311px;
-   top: 502px;
-   width: 150px;
+   width: 320px;
 }
 .uikit__filter-date-dropdown-wrapper {
    position: absolute;
@@ -241,6 +235,7 @@
 }
 
 @import './bem/text-field/text-field.scss';
+@import './bem/date-dropdown/date-dropdown.scss';
 @import './bem/dropdown/dropdown.scss';
 @import './bem/masked-text-field/masked-text-field.scss';
 @import './bem/checkbox-buttons/checkbox-buttons.scss';

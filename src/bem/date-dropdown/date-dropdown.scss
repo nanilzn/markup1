@@ -1,0 +1,61 @@
+.date-dropdown {
+   display: flex;
+}
+.date-dropdown__col {
+   flex-grow: 1;
+}
+.date-dropdown__col:not(:first-child) {
+   margin-left: 20px;
+}
+.date-dropdown__header {
+   display: flex;
+   text-transform: uppercase;
+}
+.date-dropdown__h3 {
+   -webkit-flex-grow: 1;
+           flex-grow: 1;
+}
+.date-dropdown__select {
+   @extend %noselect;
+
+   position: relative;
+
+   background-color: green;
+   height: 44px;
+   background: #FFFFFF;
+   border: 1px solid $DarkShade25;
+   box-sizing: border-box;
+   border-radius: 4px;
+   margin-top: 5px;
+   padding-left: 15px;
+   padding-bottom: 13px;
+   padding-top: 13px;
+   
+   color: $DarkShade75;
+   
+   outline: none;
+   
+   font-family: MontserratRegular;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 16px;
+   width: 100%;
+
+   cursor: default;
+}
+.date-dropdown__arrow {
+   position: absolute;
+   right: 15px;
+   top: 17px;
+   opacity: 1.0;
+}
+.date-dropdown__arrow_active {
+   top: 18px;
+}
+.date-dropdown__select:hover::placeholder {
+   color: $DarkShade100;
+}
+.date-dropdown__select:hover {
+   border: 1px solid $DarkShade50;
+}

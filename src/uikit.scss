@@ -233,6 +233,15 @@
    top: 150px;
    width: 380px;
 }
+.cards__login-wrapper {
+   position: absolute;
+   display: flex;
+   flex-direction: column;
+   left: 979px;
+   top: 231px;
+   width: 320px;
+}
+
 
 @import './bem/text-field/text-field.scss';
 @import './bem/date-dropdown/date-dropdown.scss';
@@ -253,3 +262,4 @@
 @import './bem/review/review.scss';
 
 @import './bem/apartment-search-card/apartment-search-card.scss';
+@import './bem/login-card/login-card.scss';

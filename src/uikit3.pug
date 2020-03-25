@@ -23,9 +23,12 @@ body
    include bem/bullet-list/bullet-list.pug
 
    include bem/apartment-search-card/apartment-search-card.pug
+   include bem/login-card/login-card.pug
    
    .cards-base
       .uikit-logo-wrapper
          img(src=require('./svg/logo.svg').default, alt="")
       .cards__apartment-search-wrapper
          +apartment-search-card()
+      .cards__login-wrapper
+         +login-card()

@@ -1,15 +1,12 @@
-mixin text-field(name, description='', placeholder='', arrow=false)
+mixin text-field(placeholder='', arrow=false)
    div(style!=attributes.margin).text-field
       .text-field__relative
          input(type="text" class="text-field__input" placeholder=placeholder)
          if arrow === true
             img(src=require('./bem/text-field/text-field__arrow.svg').default).text-field__arrow
 
-mixin text-field_hover(name, description='', placeholder='')
+mixin text-field_hover(placeholder='', arrow=false)
    .text-field
-      .text-field__header
-         h3=name
-         h3.text-field__description=description
       .text-field__relative
          input(type='text' class='text-field__input text-field_always-active' placeholder=placeholder)
          if arrow === true

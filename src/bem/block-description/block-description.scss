@@ -1,0 +1,16 @@
+.block-description {
+   display: flex;
+   justify-content: space-between;
+}
+.block-description__description {
+   font-family: MontserratRegular;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 12px;
+   line-height: 15px;
+
+   text-align: right;
+   text-transform: uppercase;
+
+   color: $DarkShade50;
+}

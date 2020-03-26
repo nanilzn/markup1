@@ -1,12 +1,5 @@
-.toggle__rows {
-   margin-top: 17px;
-}
-.toggle__row {
+.toggle {
    display: flex;
-   margin-top: 11px;
-}
-.toggle__row:not(:first-child) {
-   margin-top: 15px;
 }
 .toggle__checkbox {
    opacity: 0;

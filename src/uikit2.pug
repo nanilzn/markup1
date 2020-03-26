@@ -61,9 +61,9 @@ body
          +block-description('Radio buttons')(margin="margin-bottom: 17px;")
          +radio-buttons('gender', 'maleID', 'male', 'femaleID', 'female', 'Мужчина', 'Женщина')
       .uikit__toggle-wrapper
-         +toggle('Toggle')
-            +toggle__row('offers', 'offersID', 'Получать спецпредложения', true)
-            +toggle__row('offers2', 'offersID2', 'Получать спецпредложения')
+         +block-description('Toggle')(margin="margin-bottom: 16px;")
+         +toggle('offers', 'offersID', 'Получать спецпредложения', true)(margin="margin-bottom: 15px;")
+         +toggle('offers2', 'offersID2', 'Получать спецпредложения')
       .uikit__like-button-wrapper
          h3 Like button
          .uikit__like-button-row

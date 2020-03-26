@@ -36,7 +36,8 @@ body
       .uikit__dropdown-default1-wrapper
          +dropdown_default1('Dropdown', 'Default', 'Сколько гостей')
       .uikit__masked-text-field-wrapper
-         +masked-text-field('Masked text field')
+         +block-description('Masked text field', 'Default')(margin="margin-bottom: 5px;")
+         +masked-text-field('ДД.ММ.ГГГГ')
       .uikit__date-dropdown-wrapper
          +date-dropdown('Date dropdown', 'ДД.ММ.ГГГГ', 'Date dropdown', '19.08.2019')
       .uikit__filter-date-dropdown-wrapper

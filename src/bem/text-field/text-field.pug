@@ -1,8 +1,5 @@
 mixin text-field(name, description='', placeholder='', arrow=false)
-   .text-field
-      .text-field__header
-         h3=name
-         h3.text-field__description=description
+   div(style!=attributes.margin).text-field
       .text-field__relative
          input(type="text" class="text-field__input" placeholder=placeholder)
          if arrow === true

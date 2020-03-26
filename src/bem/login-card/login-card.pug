@@ -1,9 +1,10 @@
 mixin login-card()
    .login-card
       h1 Войти
-      +text-field('', '', 'Email', false)
-      +text-field('', '', 'Login', false)
-      +button-arrow('Войти')
-      +button-light('click me')
+      +text-field('', '', 'Email', false)(margin='margin-top: 20px;')
+      +text-field('', '', 'Login', false)(margin='margin-top: 10px;')
+      +button-arrow('Войти')(margin='margin-top: 20px;')
       .login-card__last-row
          .login-card__question Нет аккаунта на Toxin?
+         .login-card__button-wrapper
+            +button-light('создать')

@@ -58,8 +58,8 @@ body
             +checkbox-buttons__row('checkbox2', 'checkbox2', 'Можно с питомцами', true)
             +checkbox-buttons__row('checkbox3', 'checkbox3', 'Можно пригласить гостей (до 10 человек)', true)
       .uikit__radio-buttons-wrapper
-         +radio-buttons('Radio buttons')
-            +radio-buttons__row('gender', 'maleID', 'male', 'femaleID', 'female', 'Мужчина', 'Женщина')
+         +block-description('Radio buttons')(margin="margin-bottom: 17px;")
+         +radio-buttons('gender', 'maleID', 'male', 'femaleID', 'female', 'Мужчина', 'Женщина')
       .uikit__toggle-wrapper
          +toggle('Toggle')
             +toggle__row('offers', 'offersID', 'Получать спецпредложения', true)

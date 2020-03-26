@@ -1,12 +1,5 @@
-mixin radio-buttons(header)
+mixin radio-buttons(name, id1, value1, id2, value2, label1, label2)
    .radio-buttons
-      h3=header
-      .radio-buttons__rows
-         if block
-            block
-
-mixin radio-buttons__row(name, id1, value1, id2, value2, label1, label2)
-   .radio-buttons__row
       input(type="radio" id=id1 name=name value=value1 checked).radio-buttons__circle
       label(for=id1).radio-buttons__label=label1
       input(type="radio" id=id2 name=name value=value2).radio-buttons__circle

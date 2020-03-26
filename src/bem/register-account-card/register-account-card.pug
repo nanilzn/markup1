@@ -1,0 +1,10 @@
+mixin register-account-card()
+   .register-account-card
+      h1 Регистрация аккаунта
+      +text-field('Имя', false)(margin='margin-top: 20px;')
+      +text-field('Фамилия', false)(margin='margin-top: 10px;')
+      +button-arrow('Перейти к оплате')(margin='margin-top: 20px;')
+      .register-account-card__last-row
+         .register-account-card__question Уже есть аккаунт на Toxin
+         .register-account-card__button-wrapper
+            +button-light('войти')

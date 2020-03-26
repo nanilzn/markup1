@@ -233,10 +233,14 @@
    top: 150px;
    width: 380px;
 }
+.cards__register-wrapper {
+   position: absolute;
+   left: 140px;
+   top: 564px;
+   width: 380px;
+}
 .cards__login-wrapper {
    position: absolute;
-   display: flex;
-   flex-direction: column;
    left: 560px;
    top: 701px;
    width: 380px;
@@ -262,4 +266,5 @@
 @import './bem/review/review.scss';
 
 @import './bem/apartment-search-card/apartment-search-card.scss';
+@import './bem/register-account-card/register-account-card.scss';
 @import './bem/login-card/login-card.scss';

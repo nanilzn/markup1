@@ -1,0 +1,142 @@
+.apartment-summary-card {
+   display: flex;
+   flex-direction: column;
+   
+   padding: 46px 29px 29px;
+
+   background: #FFFFFF;
+   border: 1px solid rgba(0, 0, 0, 0.12);
+   box-sizing: border-box;
+   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+   border-radius: 4px;
+}
+.apartment-summary-card__header {
+   display: flex;
+   margin-bottom: 22px;
+}
+.apartment-summary-card__number span {
+
+   padding-left: 4px;
+
+   font-family: QuicksandBold, OpenSans;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 24px;
+   line-height: 17px;
+
+   color: $DarkShade100;
+}
+.apartment-summary-card__number {
+   font-family: QuicksandBold, OpenSans;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 14px;
+   line-height: 17px;
+
+   color: $DarkShade100;
+}
+span.apartment-summary-card__number-status {
+
+   padding-left: 5px;
+
+   font-family: MontserratBold;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 12px;
+
+   text-transform: uppercase;
+   
+   color: $Purple;
+}
+.apartment-summary-card__cost {
+
+   position: relative;
+   top: 4px;
+
+   flex-grow: 1;
+   text-align: right;
+   
+   font-family: MontserratBold;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 14px;
+   line-height: 17px;
+
+   color: $DarkShade50;
+}
+.apartment-summary-card__cost span {
+   padding-left: 4px;
+
+   font-family: MontserratRegular;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 12px;
+   line-height: 17px;
+}
+.apartment-summary-card__stats {
+   display: flex;
+   flex-direction: column;
+   
+   margin-top: 22px;
+   margin-bottom: 28px;
+
+   font-family: MontserratRegular;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 18px;
+   color: $DarkShade75;
+}
+.apartment-summary-card__stats-row {
+   display: flex;
+}
+.apartment-summary-card__stats-row:not(:last-child) {
+   margin-bottom: 15.3px;
+}
+.apartment-summary-card__stats-entry {
+   display: flex;
+   flex-direction: column;
+   flex-grow: 1;
+}
+.apartment-summary-card__stats-info {
+   position: relative;
+   top: -2px;
+
+   display: flex;
+   justify-content: center;
+   flex: 0 0 20px;
+
+   width: 20px;
+   height: 20px;
+   border: 1px solid rgba(31, 32, 65, 0.25);
+   border-radius: 10px;
+   box-sizing: border-box;
+}
+.apartment-summary-card__stats-sum {
+   display: flex;
+   flex-direction: column;
+   flex: 0 0 80px;
+   text-align: right;
+}
+.apartment-summary-card__i-svg {
+   position: relative;
+   top: -1px;
+}
+.apartment-summary-card__sum {
+   display: flex;
+   
+   font-family: Quicksand;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 19px;
+   line-height: 24px;
+   
+   color: $DarkShade100;
+}
+.apartment-summary-card__sum-dot-line {
+   flex-grow: 1;
+   position: relative;
+   top: -5px;
+   margin: 0 6px;
+   border-bottom: 1px dotted rgba(31, 32, 65, 0.25);
+}

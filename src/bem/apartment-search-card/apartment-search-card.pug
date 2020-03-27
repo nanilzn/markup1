@@ -1,6 +1,7 @@
 mixin apartment-search-card()
    .apartment-search-card
       h1 Найдём номера под ваши пожелания
-      +date-dropdown('прибытие', 'ДД.ММ.ГГГГ', 'выезд', 'ДД.ММ.ГГГГ')(margin='margin-top: 20px;')
-      +dropdown('Гости', '', 'Сколько гостей')(margin='margin-top: 21px;')
+      +date-dropdown('прибытие', 'ДД.ММ.ГГГГ', 'выезд', 'ДД.ММ.ГГГГ')(margin='margin-top: 20px; margin-bottom: 21px;')
+      h3 Гости
+      +dropdown('Сколько гостей')(margin='margin-top: 5px;')
       +button-arrow('Подобрать номер')(margin='margin-top: 31px;')

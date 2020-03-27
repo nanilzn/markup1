@@ -245,6 +245,13 @@
    top: 701px;
    width: 380px;
 }
+.cards__apartment-summary-wrapper {
+   position: absolute;
+   left: 560px;
+   top: 150px;
+   width: 380px;
+}
+
 
 @import './bem/block-description/block-description.scss';
 @import './bem/text-field/text-field.scss';
@@ -266,5 +273,6 @@
 @import './bem/review/review.scss';
 
 @import './bem/apartment-search-card/apartment-search-card.scss';
+@import './bem/apartment-summary-card/apartment-summary-card.scss';
 @import './bem/register-account-card/register-account-card.scss';
 @import './bem/login-card/login-card.scss';

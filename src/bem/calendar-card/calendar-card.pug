@@ -1,0 +1,95 @@
+mixin calendar-card()
+   .calendar-card
+      .calendar-card__header
+         .calendar-card__arrow-wrapper
+            img(src=require('./bem/calendar-card/calendar-card__left-arrow.svg').default)
+         h2.calendar-card__header-text Август 2019
+         .calendar-card__arrow-wrapper
+            img(src=require('./bem/calendar-card/calendar-card__right-arrow.svg').default)
+      .calendar-card__table
+         .calendar-card__row
+            .calendar-card__cell Пн
+            .calendar-card__cell Вт
+            .calendar-card__cell Ср
+            .calendar-card__cell Чт
+            .calendar-card__cell Пт
+            .calendar-card__cell Сб
+            .calendar-card__cell Вс
+         .calendar-card__row
+            .calendar-card__cell.calendar-card__cell_inactive
+               .calendar-card__cell-content 29
+            .calendar-card__cell.calendar-card__cell_inactive
+               .calendar-card__cell-content 30
+            .calendar-card__cell.calendar-card__cell_inactive
+               .calendar-card__cell-content 31
+            .calendar-card__cell
+               .calendar-card__cell-content 1
+            .calendar-card__cell
+               .calendar-card__cell-content 2
+            .calendar-card__cell
+               .calendar-card__cell-content 3
+            .calendar-card__cell
+               .calendar-card__cell-content 4
+         .calendar-card__row
+            .calendar-card__cell
+               .calendar-card__cell-content 5
+            .calendar-card__cell
+               .calendar-card__cell-content 6
+            .calendar-card__cell
+               .calendar-card__cell-content 7
+            .calendar-card__cell.calendar-card__cell_marked
+               .calendar-card__cell-content 8
+            .calendar-card__cell
+               .calendar-card__cell-content 9
+            .calendar-card__cell
+               .calendar-card__cell-content 10
+            .calendar-card__cell
+               .calendar-card__cell-content 11
+         .calendar-card__row
+            .calendar-card__cell
+               .calendar-card__cell-content 12
+            .calendar-card__cell
+               .calendar-card__cell-content 13
+            .calendar-card__cell
+               .calendar-card__cell-content 14
+            .calendar-card__cell
+               .calendar-card__cell-content 15
+            .calendar-card__cell
+               .calendar-card__cell-content 16
+            .calendar-card__cell
+               .calendar-card__cell-content 17
+            .calendar-card__cell
+               .calendar-card__cell-content 18
+         .calendar-card__row
+            .calendar-card__cell.calendar-card__cell_selected.calendar-card__cell_first-selected
+               .calendar-card__cell-content 19
+            .calendar-card__cell.calendar-card__cell_selected
+               .calendar-card__cell-content 20
+            .calendar-card__cell.calendar-card__cell_selected
+               .calendar-card__cell-content 21
+            .calendar-card__cell.calendar-card__cell_selected
+               .calendar-card__cell-content 22
+            .calendar-card__cell.calendar-card__cell_selected.calendar-card__cell_last-selected
+               .calendar-card__cell-content 23
+            .calendar-card__cell
+               .calendar-card__cell-content 24
+            .calendar-card__cell
+               .calendar-card__cell-content 25
+         .calendar-card__row
+            .calendar-card__cell
+               .calendar-card__cell-content 26
+            .calendar-card__cell
+               .calendar-card__cell-content 27
+            .calendar-card__cell
+               .calendar-card__cell-content 28
+            .calendar-card__cell
+               .calendar-card__cell-content 29
+            .calendar-card__cell
+               .calendar-card__cell-content 30
+            .calendar-card__cell
+               .calendar-card__cell-content 31
+            .calendar-card__cell.calendar-card__cell_inactive
+               .calendar-card__cell-content 1
+      .calendar-card__control
+         .calendar-card__clear Очистить
+         .calendar-card__apply Применить

@@ -251,6 +251,12 @@
    top: 150px;
    width: 380px;
 }
+.cards__calendar-wrapper {
+   position: absolute;
+   left: 980px;
+   top: 150px;
+   width: 320px;
+}
 
 
 @import './bem/block-description/block-description.scss';
@@ -276,3 +282,4 @@
 @import './bem/apartment-summary-card/apartment-summary-card.scss';
 @import './bem/register-account-card/register-account-card.scss';
 @import './bem/login-card/login-card.scss';
+@import './bem/calendar-card/calendar-card.scss';

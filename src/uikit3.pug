@@ -27,6 +27,7 @@ body
    include bem/apartment-summary-card/apartment-summary-card.pug
    include bem/register-account-card/register-account-card.pug
    include bem/login-card/login-card.pug
+   include bem/calendar-card/calendar-card.pug
    
    .cards-base
       .uikit-logo-wrapper
@@ -39,3 +40,5 @@ body
          +register-account-card()
       .cards__apartment-summary-wrapper
          +apartment-summary-card()
+      .cards__calendar-wrapper
+         +calendar-card()

@@ -1,0 +1,24 @@
+mixin apartment-card(imgPath, number, price, luxury=false, starNumber=5, reviewNumber=0, showShade=false)
+   .apartment-card
+      .apartment-card__wrapper
+         img(src=imgPath)
+         if showShade
+            .apartment-card__image-left-shade
+            .apartment-card__image-right-shade
+            img(src=require('./bem/apartment-card/apartment-card__arrow-left.svg').default).apartment-card__arrow-left
+            img(src=require('./bem/apartment-card/apartment-card__arrow-right.svg').default).apartment-card__arrow-right
+         .apartment-card__dot1.apartment-card__dot_full
+         .apartment-card__dot2.apartment-card__dot_empty
+         .apartment-card__dot3.apartment-card__dot_empty
+         .apartment-card__dot4.apartment-card__dot_empty
+      .apartment-card__stats
+         .apartment-card__number
+            | №
+            span.apartment-card__number-value=number
+            if luxury
+               span.apartment-card__number-status люкс
+         .apartment-card__cost #[span=price]₽ #[span.apartment-card__cost-description в сутки]
+      .apartment-card__divide-line
+      .apartment-card__rating
+         +rate_button(5, starNumber)
+         .apartment-card__reviews #[span.apartment-card__reviews-number=reviewNumber] Отзывов

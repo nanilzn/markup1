@@ -257,6 +257,18 @@
    top: 150px;
    width: 320px;
 }
+.cards__card1-wrapper {
+   position: absolute;
+   left: 980px;
+   top: 559px;
+   width: 270px;
+}
+.cards__card2-wrapper {
+   position: absolute;
+   left: 980px;
+   top: 856px;
+   width: 270px;
+}
 
 
 @import './bem/block-description/block-description.scss';
@@ -278,6 +290,7 @@
 @import './bem/bullet-list/bullet-list.scss';
 @import './bem/review/review.scss';
 
+@import './bem/apartment-card/apartment-card.scss';
 @import './bem/apartment-search-card/apartment-search-card.scss';
 @import './bem/apartment-summary-card/apartment-summary-card.scss';
 @import './bem/register-account-card/register-account-card.scss';

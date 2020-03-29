@@ -1,0 +1,142 @@
+.apartment-card {
+   overflow: hidden;
+   background: #FFFFFF;
+   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+   border-radius: 4px;
+   padding-bottom: 18px;
+}
+.apartment-card__wrapper {
+   position: relative;
+}
+.apartment-card__arrow-left {
+   position: absolute;
+   left: 18px;
+   top: 69px;
+}
+.apartment-card__arrow-right {
+   position: absolute;
+   right: 18px;
+   top: 69px;
+}
+.apartment-card__dot1 {
+   position: absolute;
+   top: 129px;
+   right: 48.75px;
+}
+.apartment-card__dot2 {
+   position: absolute;
+   top: 129px;
+   right: 37.5px;
+}
+.apartment-card__dot3 {
+   position: absolute;
+   top: 129px;
+   right: 26.25px;
+}
+.apartment-card__dot4 {
+   position: absolute;
+   top: 129px;
+   right: 15px;
+}
+.apartment-card__dot_full {
+   width: 7px;
+   height: 7px;
+   background-color: white;
+   border-radius: 10px;
+}
+.apartment-card__dot_empty {
+   width: 7px;
+   height: 7px;
+   -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+           box-sizing: border-box;
+   border: 1px solid white;
+   border-radius: 10px;
+}
+.apartment-card__image-left-shade {
+   position: absolute;
+   left: 0;
+   top: 0;
+   
+   width: 42px;
+   height: 151px;
+   background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+}
+.apartment-card__image-right-shade {
+   position: absolute;
+   right: 0;
+   top: 0;
+   
+   width: 42px;
+   height: 151px;
+   background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+   transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.apartment-card__stats {
+   display: flex;
+   justify-content: space-between;
+   margin: 17px 18px 10px 20px;
+   
+   font-family: QuicksandBold, OpenSans;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 14px;
+   line-height: 17px;
+
+   color: $DarkShade100;
+}
+.apartment-card__number {
+   width: 50%;
+}
+span.apartment-card__number-value {
+   padding-left: 4px;
+   font-size: 19px;
+}
+span.apartment-card__number-status {
+   padding-left: 4px;
+
+   font-family: MontserratBold;
+   font-weight: bold;
+   font-size: 16px;
+   color: $Purple;
+}
+.apartment-card__cost {
+   width: 50%;
+   text-align: right;
+   
+   font-family: MontserratBold;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 14px;
+   line-height: 18px;
+   
+   color: $DarkShade50;
+}
+span.apartment-card__cost-description {
+   font-family: MontserratRegular;
+   font-weight: normal;
+   font-size: 12px;
+}
+.apartment-card__rating {
+   display: flex;
+   justify-content: space-between;
+   margin: 10px 20px 0px;
+}
+.apartment-card__divide-line {
+   margin: 0 20px;
+   height: 1px;
+   background: $DarkShade10;
+}
+.apartment-card__reviews {
+}
+span.apartment-card__reviews-number {
+   font-family: MontserratBold;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 14px;
+   line-height: 18px;
+
+   text-align: right;
+
+   color: $DarkShade50;
+}

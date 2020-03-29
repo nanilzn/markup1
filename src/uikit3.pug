@@ -23,6 +23,7 @@ body
    include bem/rich-checkbox-buttons/rich-checkbox-buttons.pug
    include bem/bullet-list/bullet-list.pug
 
+   include bem/apartment-card/apartment-card.pug
    include bem/apartment-search-card/apartment-search-card.pug
    include bem/apartment-summary-card/apartment-summary-card.pug
    include bem/register-account-card/register-account-card.pug
@@ -42,3 +43,7 @@ body
          +apartment-summary-card()
       .cards__calendar-wrapper
          +calendar-card()
+      .cards__card1-wrapper
+         +apartment-card(require('./images/apartment1.png').default, 888, '9 990', true, 5, '145', true)
+      .cards__card2-wrapper
+         +apartment-card(require('./images/apartment2.png').default, 840, '9 900', false, 4, '65')

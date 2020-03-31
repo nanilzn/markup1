@@ -78,6 +78,10 @@ module.exports = {
       filename: 'uikit3.html',
       template: './src/uikit3.pug'
     }),
+    new HtmlWebpackPlugin({
+      filename: 'uikit4.html',
+      template: './src/uikit4.pug'
+    }),
     new MiniCssExtractPlugin({
       filename: 'style.css',
       chunkFilename: '[id].css',

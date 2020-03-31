@@ -270,6 +270,21 @@
    width: 270px;
 }
 
+   // headers & footer
+
+.headers-n-footers-base {
+   min-height: calc(100vh - 150px);
+   height: 100%;
+
+   padding-top: 150px;
+   background-color: #F4F4F6;
+   
+   display: flex;
+   flex-direction: column;
+}
+.headers-n-footers__indent {
+   flex-basis: 40px;
+}
 
 @import './bem/block-description/block-description.scss';
 @import './bem/text-field/text-field.scss';
@@ -296,3 +311,5 @@
 @import './bem/register-account-card/register-account-card.scss';
 @import './bem/login-card/login-card.scss';
 @import './bem/calendar-card/calendar-card.scss';
+
+@import './bem/header/header.scss';

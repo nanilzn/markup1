@@ -12,4 +12,6 @@ body
    .headers-n-footers-base
       .uikit-logo-wrapper
          img(src=require('./svg/logo.svg').default, alt="")
-      +header()
+      +header('Login', 'Register')
+      .headers-n-footers__indent
+      +header-logged-in('Cosmin Negoita')

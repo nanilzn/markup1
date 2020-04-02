@@ -8,6 +8,7 @@ body
    include bem/button/button.pug
 
    include bem/header/header.pug
+   include bem/footer/footer.pug
 
    .headers-n-footers-base
       .uikit-logo-wrapper
@@ -27,4 +28,6 @@ body
          li.header__menu-item Careers
          li.header__menu-item News
          li.header__menu-item Documentation
-      
+      .headers-n-footers__indent
+      +footer-full()
+      .headers-n-footers__indent

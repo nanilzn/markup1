@@ -281,7 +281,7 @@
    display: flex;
    flex-direction: column;
    
-   // min-width: 1440px;
+   min-width: 1440px;
 }
 .headers-n-footers__indent {
    flex-basis: 40px;
@@ -314,3 +314,4 @@
 @import './bem/calendar-card/calendar-card.scss';
 
 @import './bem/header/header.scss';
+@import './bem/footer/footer.scss';

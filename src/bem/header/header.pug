@@ -6,12 +6,8 @@ mixin header(loginButton='Login', registerButton='Register')
          img(src=require('./svg/logo-text.svg').default).header__logo-text
          .header__space
          ul.header__menu
-            li.header__menu-item.header__menu-item_header Home
-            li.header__menu-item About Us
-            li.header__menu-item.header__menu-item_dropdown Services
-            li.header__menu-item Careers
-            li.header__menu-item News
-            li.header__menu-item Documentation
+            if block
+               block
          +button-light(loginButton)(style='margin-right: 20px; height: 34px; padding: 0 18px 0 17px; flex-shrink: 0;')
          +button-primary(registerButton)(style='height: 34px;  padding: 0 20px 0 19px; margin-right: 10px; flex-shrink: 0;')
       .header__margin
@@ -24,12 +20,8 @@ mixin header-logged-in(userName='Username')
          img(src=require('./svg/logo-text.svg').default).header__logo-text
          .header__space
          ul.header__menu
-            li.header__menu-item.header__menu-item_header Home
-            li.header__menu-item About Us
-            li.header__menu-item.header__menu-item_dropdown Services
-            li.header__menu-item Careers
-            li.header__menu-item News
-            li.header__menu-item Documentation
+            if block
+               block
          .header__divider
          .header__user-name=userName
       .header__margin

@@ -13,5 +13,18 @@ body
       .uikit-logo-wrapper
          img(src=require('./svg/logo.svg').default, alt="")
       +header('Login', 'Register')
+         li.header__menu-item.header__menu-item_header Home
+         li.header__menu-item About Us
+         li.header__menu-item.header__menu-item_dropdown Services
+         li.header__menu-item Careers
+         li.header__menu-item News
+         li.header__menu-item Documentation
       .headers-n-footers__indent
       +header-logged-in('Cosmin Negoita')
+         li.header__menu-item.header__menu-item_header Home
+         li.header__menu-item About Us
+         li.header__menu-item.header__menu-item_dropdown Services
+         li.header__menu-item Careers
+         li.header__menu-item News
+         li.header__menu-item Documentation
+      

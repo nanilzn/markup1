@@ -47,6 +47,13 @@ ul.header__menu {
    list-style: none;
    margin-right: 28px;
 }
+
+@media only screen and (max-width: $MobileMaxWidth) {
+   ul.header__menu {
+      display: none;
+   }
+}
+
 ul.header__menu li {
    display: inline;
 }

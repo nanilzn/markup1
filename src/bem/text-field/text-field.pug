@@ -1,9 +1,13 @@
-mixin text-field(placeholder='', arrow=false)
+mixin text-field(placeholder='')
    div(style!=attributes.margin).text-field
       .text-field__relative
          input(type="text" class="text-field__input" placeholder=placeholder)
-         if arrow === true
-            img(src=require('./bem/text-field/text-field__arrow.svg').default).text-field__arrow
+
+mixin subscription-text-field(placeholder='')
+   div(style!=attributes.margin).text-field
+      .text-field__relative
+         input(type="text" class="text-field__input" placeholder=placeholder)
+         img(src=require('./bem/text-field/text-field__arrow.svg').default).text-field__arrow
 
 mixin text-field_hover(placeholder='', arrow=false)
    .text-field

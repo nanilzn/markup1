@@ -23,18 +23,22 @@
 
    flex-shrink: 0;
    flex-grow: 1;
-   
-   padding: 0 10px;
+
    flex-basis: 1180px;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1180px) {
    .header__content {
       -webkit-flex-basis: 100%;
               flex-basis: 100%;
    }
 }
+.header__logo-icon {
+   margin-left: 10px;
+   flex-shrink: 0;
+}
 .header__logo-text {
    margin-left: 12px;
+   flex-shrink: 0;
 }
 .header__space {
    flex-grow: 1;
@@ -74,4 +78,7 @@ li.header__menu-item_dropdown:after {
    background: $DarkShade10;
    margin-left: 3px;
    margin-right: 30px;
+}
+.header__user-name {
+   margin-right: 10px;
 }

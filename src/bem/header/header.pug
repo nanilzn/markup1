@@ -2,7 +2,7 @@ mixin header(loginButton='Login', registerButton='Register')
    .header
       .header__margin
       .header__content
-         img(src=require('./svg/logo-colored.svg').default)
+         img(src=require('./svg/logo-colored.svg').default).header__logo-icon
          img(src=require('./svg/logo-text.svg').default).header__logo-text
          .header__space
          ul.header__menu
@@ -12,15 +12,15 @@ mixin header(loginButton='Login', registerButton='Register')
             li.header__menu-item Careers
             li.header__menu-item News
             li.header__menu-item Documentation
-         +button-light(loginButton)(style='margin-right: 20px; height: 34px; padding: 0 18px 0 17px;')
-         +button-primary(registerButton)(style='height: 34px;  padding: 0 20px 0 19px;')
+         +button-light(loginButton)(style='margin-right: 20px; height: 34px; padding: 0 18px 0 17px; flex-shrink: 0;')
+         +button-primary(registerButton)(style='height: 34px;  padding: 0 20px 0 19px; margin-right: 10px; flex-shrink: 0;')
       .header__margin
 
 mixin header-logged-in(userName='Username')
    .header
       .header__margin
       .header__content
-         img(src=require('./svg/logo-colored.svg').default)
+         img(src=require('./svg/logo-colored.svg').default).header__logo-icon
          img(src=require('./svg/logo-text.svg').default).header__logo-text
          .header__space
          ul.header__menu
@@ -31,5 +31,5 @@ mixin header-logged-in(userName='Username')
             li.header__menu-item News
             li.header__menu-item Documentation
          .header__divider
-         div=userName
+         .header__user-name=userName
       .header__margin

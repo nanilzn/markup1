@@ -286,6 +286,9 @@
 .headers-n-footers__indent {
    flex-basis: 40px;
 }
+.headers-n-footers__indent-long {
+   flex-basis: 540px;
+}
 
 @import './bem/block-description/block-description.scss';
 @import './bem/text-field/text-field.scss';

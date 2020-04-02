@@ -2,37 +2,51 @@ mixin footer-full()
    .footer
       .footer__menu-section
          .footer__margin
-         .footer__col.footer__col_wide
-            .footer__logo-wrapper
-               img(src=require('./svg/logo-colored.svg').default).footer__logo-icon
-               img(src=require('./svg/logo-text.svg').default).footer__logo-text
-            .footer__description Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
-         .footer__fill-col
-         .footer__col
-            ul.footer__menu
-               li.footer__menu-item.footer__menu-item_header Navigation
-               li.footer__menu-item About Us
-               li.footer__menu-item News
-               li.footer__menu-item Support
-               li.footer__menu-item Products
-         .footer__fill-col
-         .footer__col
-            ul.footer__menu
-               li.footer__menu-item.footer__menu-item_header About Us
-               li.footer__menu-item Who we are
-               li.footer__menu-item Our team
-               li.footer__menu-item Careers
-               li.footer__menu-item Investors
-         .footer__fill-col
-         .footer__col
-            ul.footer__menu
-               li.footer__menu-item.footer__menu-item_header Support
-               li.footer__menu-item Documentation
-               li.footer__menu-item Community
-               li.footer__menu-item Get in touch
-         .footer__fill-col
-         .footer__col.footer__col_wide
-            h3 Subscribe to our newsletter
-            .footer__subscribe-call Receive our latest news and promotions in your inbox!
+         .footer__content
+            .footer__col.footer__col_wide.footer__col_first
+               .footer__logo-wrapper
+                  img(src=require('./svg/logo-colored.svg').default).footer__logo-icon
+                  img(src=require('./svg/logo-text.svg').default).footer__logo-text
+               .footer__description Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
+            .footer__fill-col-1
+            .footer__col
+               ul.footer__menu
+                  li.footer__menu-item.footer__menu-item_header Navigation
+                  li.footer__menu-item About Us
+                  li.footer__menu-item News
+                  li.footer__menu-item Support
+                  li.footer__menu-item Products
+            .footer__fill-col-2
+            .footer__col
+               ul.footer__menu
+                  li.footer__menu-item.footer__menu-item_header About Us
+                  li.footer__menu-item Who we are
+                  li.footer__menu-item Our team
+                  li.footer__menu-item Careers
+                  li.footer__menu-item Investors
+            .footer__fill-col-2
+            .footer__col
+               ul.footer__menu
+                  li.footer__menu-item.footer__menu-item_header Support
+                  li.footer__menu-item Documentation
+                  li.footer__menu-item Community
+                  li.footer__menu-item Get in touch
+            .footer__fill-col-2
+            .footer__col.footer__col_wide.footer__col_last
+               h3 Subscribe to our newsletter
+               .footer__subscribe-call Receive our latest news and promotions in your inbox!
+               +subscription-text-field('Your email address')(margin='margin-top: 21px;')
          .footer__margin
       .footer__copyright-section
+         .footer__margin
+         .footer__content
+            .footer__copyright-content
+               .footer__copyright-text Copyright © 2018 Toxin UI Kit. All rights reserved.
+               .footer__icons-wrapper
+                  .footer__icon-wrapper
+                     img(src=require('./bem/footer/footer__twitter.svg').default)
+                  .footer__icon-wrapper
+                     img(src=require('./bem/footer/footer__facebook.svg').default)
+                  .footer__icon-wrapper
+                     img(src=require('./bem/footer/footer__instagram.svg').default)
+         .footer__margin

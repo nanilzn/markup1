@@ -43,22 +43,27 @@
 .footer__fill-col-1 {
    flex-grow: 1;
    flex-basis: 40px;
+   flex-shrink: 1;
 }
 .footer__fill-col-2 {
    flex-grow: 2;
    flex-basis: 80px;
+   flex-shrink: 1;
 }
 .footer__fill-col-3 {
    flex-grow: 3;
    flex-basis: 120px;
+   flex-shrink: 1;
 }
 .footer__col {
    flex-grow: 3;
+   flex-shrink: 0.1;
    -webkit-flex-basis: 120px;
            flex-basis: 120px;
 }
 .footer__col_wide {
    flex-grow: 6;
+   flex-shrink: 0.1;
    -webkit-flex-basis: 240px;
            flex-basis: 240px;
 }

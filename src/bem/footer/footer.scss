@@ -21,6 +21,77 @@
 
    flex-basis: 1180px;
 }
+.footer__col-left-content {
+   flex-shrink: 1;
+   flex-grow: 1;
+}
+.footer__col-left-side {
+   padding-left: 10px;
+   flex: 1 1 22%;
+}
+.footer__col-left-side > .footer__margin {
+   display: none;
+}
+.footer__col-center {
+   display: flex;
+   justify-content: space-around;
+   
+   flex: 1 1 55.6%;
+}
+.footer__col-right-side {
+   margin-right: 10px;
+   margin-left: 10px;
+   flex: 1 1 22.4%;
+}
+.footer__col-right-side > .footer__margin {
+   display: none;
+}
+@media only screen and (max-width: $MobileMaxWidth) {
+   .footer__col-left-side {
+      display: flex;
+      justify-content: center;
+      flex-basis: 100%;
+   }
+   .footer__col-left-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   .footer__col-left-side > .footer__margin {
+      display: block;
+   }
+   .footer__col-center {
+      margin-top: 30px;
+      flex-basis: 100%;
+   }
+   .footer__col-right-side {
+      display: flex;
+      flex-basis: 100%;
+      margin: 20px 10px 0 10px;
+   }
+   .footer__col-right-content {
+      display: flex;
+      flex-shrink: 0;
+      flex-grow: 1;
+
+      flex-basis: 700px;
+      flex-direction: column;
+   }
+   .footer__col-right-side > .footer__margin {
+      display: block;
+   }
+   .footer__content {
+      flex-wrap: wrap;
+   }
+   .footer__description {
+      text-align: center;
+   }
+}
+@media only screen and (max-width: 740px) {
+   .footer__col-right-content {
+      flex-basis: 100%;
+   }
+}
 @media only screen and (max-width: 1180px) {
    .footer__content {
       -webkit-flex-basis: 100%;
@@ -39,39 +110,6 @@
 }
 .footer__logo-text {
    margin-left: 12px;
-}
-.footer__fill-col-1 {
-   flex-grow: 1;
-   flex-basis: 40px;
-   flex-shrink: 1;
-}
-.footer__fill-col-2 {
-   flex-grow: 2;
-   flex-basis: 80px;
-   flex-shrink: 1;
-}
-.footer__fill-col-3 {
-   flex-grow: 3;
-   flex-basis: 120px;
-   flex-shrink: 1;
-}
-.footer__col {
-   flex-grow: 3;
-   flex-shrink: 0.1;
-   -webkit-flex-basis: 120px;
-           flex-basis: 120px;
-}
-.footer__col_wide {
-   flex-grow: 6;
-   flex-shrink: 0.1;
-   -webkit-flex-basis: 240px;
-           flex-basis: 240px;
-}
-.footer__col_first {
-   margin-left: 10px;
-}
-.footer__col_last {
-   margin-right: 10px;
 }
 .footer__logo-wrapper {
    display: flex;

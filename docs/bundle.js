@@ -94,7 +94,18 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ \"./src/style.scss\");\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _uikit_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./uikit.scss */ \"./src/uikit.scss\");\n/* harmony import */ var _uikit_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_uikit_scss__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _svg_twitter_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./svg/twitter.svg */ \"./src/svg/twitter.svg\");\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ \"./src/style.scss\");\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _uikit_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./uikit.scss */ \"./src/uikit.scss\");\n/* harmony import */ var _uikit_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_uikit_scss__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _landing_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./landing.scss */ \"./src/landing.scss\");\n/* harmony import */ var _landing_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_landing_scss__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _svg_twitter_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./svg/twitter.svg */ \"./src/svg/twitter.svg\");\n\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/app.js?");
+
+/***/ }),
+
+/***/ "./src/landing.scss":
+/*!**************************!*\
+  !*** ./src/landing.scss ***!
+  \**************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/landing.scss?");
 
 /***/ }),
 

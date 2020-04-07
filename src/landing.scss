@@ -1,0 +1,52 @@
+.landing {
+   flex-grow: 1;
+   min-height: 1px;
+}
+.landing__content {
+   position: relative;
+}
+.landing__img {
+   max-width: 100%;
+   max-height: 100%;
+   min-height: 500px;
+   object-fit: cover;
+   display: block; /* remove extra space below image */
+}
+.landing__apartment-search-markup {
+   position: absolute;
+   top: 70px;
+   left: 0;
+   width: 100%;
+
+   display: flex;
+}
+.landing__apartment-margin {
+   flex-shrink: 1;
+   flex-grow: 0;
+   flex-basis: 130px; 
+}
+.landing__apartment-margin2 {
+   flex-shrink: 1;
+   flex-grow: 0;
+   flex-basis: 10px; 
+}
+.landing__apartment-center-wrapper {
+   display: flex;
+   flex-shrink: 0;
+   flex-grow: 1;
+   flex-basis: 1160px;
+}
+.landing__apartment-center-wrapper2 {
+   flex-shrink: 0;
+   flex-basis: 380px;
+}
+@media only screen and (max-width: 1180px) {
+   .landing__apartment-center-wrapper {
+      flex-basis: 100%;
+   }
+}
+@media only screen and (max-width: 400px) {
+   .landing__apartment-center-wrapper2 {
+      flex-basis: 100%;
+   }
+}

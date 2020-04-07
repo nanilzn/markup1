@@ -82,6 +82,10 @@ module.exports = {
       filename: 'uikit4.html',
       template: './src/uikit4.pug'
     }),
+    new HtmlWebpackPlugin({
+      filename: 'landing.html',
+      template: './src/landing.pug'
+    }),
     new MiniCssExtractPlugin({
       filename: 'style.css',
       chunkFilename: '[id].css',

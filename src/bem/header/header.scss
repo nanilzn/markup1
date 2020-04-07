@@ -48,7 +48,7 @@ ul.header__menu {
    margin-right: 28px;
 }
 
-@media only screen and (max-width: $MobileMaxWidth) {
+@media only screen and (max-width: $MobileMaxWidth + 40px) {
    ul.header__menu {
       display: none;
    }

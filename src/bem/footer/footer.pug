@@ -1,69 +1,56 @@
-mixin footer()
-   .footer
-      .footer__menu-section
-         .footer__margin
-         .footer__content
-            .footer__col-left-side
-               .footer__margin
-               .footer__col-left-content
-                  .footer__logo-wrapper
-                     img(src=require('./svg/logo-colored.svg').default).footer__logo-icon
-                     img(src=require('./svg/logo-text.svg').default).footer__logo-text
+.footer
+   .footer__menu-section
+      .footer__margin
+      .footer__content
+         .footer__col-left-side
+            .footer__margin
+            .footer__col-left-content
+               .footer__logo-wrapper
+                  img(src=require('./svg/logo-colored.svg').default).footer__logo-icon
+                  img(src=require('./svg/logo-text.svg').default).footer__logo-text
+               block description
                   .footer__description Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
-               .footer__margin
-            .footer__col-center
+            .footer__margin
+         .footer__col-center
+            block menu-col-1
                ul.footer__menu
                   li.footer__menu-item.footer__menu-item_header Navigation
                   li.footer__menu-item About Us
                   li.footer__menu-item News
                   li.footer__menu-item Support
                   li.footer__menu-item Products
+            block menu-col-2
                ul.footer__menu
                   li.footer__menu-item.footer__menu-item_header About Us
                   li.footer__menu-item Who we are
                   li.footer__menu-item Our team
                   li.footer__menu-item Careers
                   li.footer__menu-item Investors
+            block menu-col-3
                ul.footer__menu
                   li.footer__menu-item.footer__menu-item_header Support
                   li.footer__menu-item Documentation
                   li.footer__menu-item Community
                   li.footer__menu-item Get in touch
-            .footer__col-right-side
-               .footer__margin
-               .footer__col-right-content
+         .footer__col-right-side
+            .footer__margin
+            .footer__col-right-content
+               block newsletter
                   h3 Subscribe to our newsletter
                   .footer__subscribe-call Receive our latest news and promotions in your inbox!
-                  +subscription-text-field('Your email address')(margin='margin-top: 21px;')
-               .footer__margin
-         .footer__margin
-      .footer__copyright-section
-         .footer__margin
-         .footer__content
-            .footer__copyright-content
-               .footer__copyright-text Copyright © 2018 Toxin UI Kit. All rights reserved.
-               .footer__icons-wrapper
-                  .footer__icon-wrapper
-                     img(src=require('./bem/footer/footer__twitter.svg').default)
-                  .footer__icon-wrapper
-                     img(src=require('./bem/footer/footer__facebook.svg').default)
-                  .footer__icon-wrapper
-                     img(src=require('./bem/footer/footer__instagram.svg').default)
-         .footer__margin
-
-mixin footer-compact()
-   .footer__compact
-      .footer__logo-wrapper
-         img(src=require('./svg/logo-colored.svg').default).footer__logo-icon
-         img(src=require('./svg/logo-text.svg').default).footer__logo-text
-      .footer__compact-description-wrapper
-         .footer__compact-margin
-         .footer__compact-description Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
-         .footer__compact-margin
-      .footer__icons-wrapper.footer__icons-wrapper_compact
-         .footer__icon-wrapper
-            img(src=require('./bem/footer/footer__twitter.svg').default)
-         .footer__icon-wrapper
-            img(src=require('./bem/footer/footer__facebook.svg').default)
-         .footer__icon-wrapper
-            img(src=require('./bem/footer/footer__instagram.svg').default)
+               +subscription-text-field('Your email address')(margin='margin-top: 21px;')
+            .footer__margin
+      .footer__margin
+   .footer__copyright-section
+      .footer__margin
+      .footer__content
+         .footer__copyright-content
+            .footer__copyright-text Copyright © 2018 Toxin UI Kit. All rights reserved.
+            .footer__icons-wrapper
+               .footer__icon-wrapper
+                  img(src=require('./bem/footer/footer__twitter.svg').default)
+               .footer__icon-wrapper
+                  img(src=require('./bem/footer/footer__facebook.svg').default)
+               .footer__icon-wrapper
+                  img(src=require('./bem/footer/footer__instagram.svg').default)
+      .footer__margin

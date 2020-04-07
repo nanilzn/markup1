@@ -25,7 +25,6 @@ body
    include bem/bullet-list/bullet-list.pug
 
    include bem/header/header.pug
-   include bem/footer/footer.pug
 
    include bem/apartment-search-card/apartment-search-card.pug
 
@@ -45,4 +44,4 @@ body
                .landing__apartment-center-wrapper2
                   +apartment-search-card()
             .landing__apartment-margin
-   +footer()
+   include landing__footer.pug

@@ -32,6 +32,12 @@
               flex-basis: 100%;
    }
 }
+@media (max-width: 420px) {
+   .header__logo-text,
+   .header__logo-icon {
+      display: none;
+   }
+}
 .header__logo-icon {
    margin-left: 10px;
    flex-shrink: 0;

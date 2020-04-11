@@ -290,6 +290,24 @@
    flex-basis: 540px;
 }
 
+   // cards one column
+
+.cards-one-column__base {
+   padding-top: 150px;
+   box-sizing: border-box;
+   height: 3600px;
+   position: relative;
+
+   background-color: #F4F4F6;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+}
+.cards-one-column__wrapper {
+   position: absolute;
+   top: 30px;
+}
+
 @import './bem/block-description/block-description.scss';
 @import './bem/text-field/text-field.scss';
 @import './bem/date-dropdown/date-dropdown.scss';

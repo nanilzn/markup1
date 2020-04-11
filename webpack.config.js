@@ -83,6 +83,10 @@ module.exports = {
       template: './src/uikit4.pug'
     }),
     new HtmlWebpackPlugin({
+      filename: 'uikit5.html',
+      template: './src/uikit5.pug'
+    }),
+    new HtmlWebpackPlugin({
       filename: 'landing.html',
       template: './src/landing.pug'
     }),

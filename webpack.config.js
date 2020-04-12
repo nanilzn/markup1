@@ -90,6 +90,10 @@ module.exports = {
       filename: 'landing.html',
       template: './src/landing.pug'
     }),
+    new HtmlWebpackPlugin({
+      filename: 'search.html',
+      template: './src/search.pug'
+    }),
     new MiniCssExtractPlugin({
       filename: 'style.css',
       chunkFilename: '[id].css',

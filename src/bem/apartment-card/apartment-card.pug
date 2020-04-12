@@ -1,7 +1,7 @@
 mixin apartment-card(imgPath, number, price, luxury=false, starNumber=5, reviewNumber=0, showShade=false)
    .apartment-card
       .apartment-card__wrapper
-         img(src=imgPath)
+         img(src=imgPath).apartment-card__img
          if showShade
             .apartment-card__image-left-shade
             .apartment-card__image-right-shade

@@ -1,0 +1,27 @@
+@import 'style.scss';
+
+.filter {
+   flex-grow: 1;
+   display: flex;
+   align-items: center;
+   -webkit-justify-content: center;
+           justify-content: center;
+}
+.filter__control {
+   flex-basis: 266px;
+   flex-shrink: 0;
+}
+.filter__content {
+   flex-basis: 834px;
+   margin-left: 60px;
+}
+.filter__slider-description {
+   margin-top: 13px;
+
+   font-family: MontserratRegular;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 12px;
+   line-height: 14px;
+   color: $DarkShade50;
+}

@@ -5,7 +5,7 @@ mixin expandable-checkbox-list(header='expandable checkbox list')
          img(src=require('./bem/expandable-checkbox-list/expandable-checkbox-list__arrow-down.svg').default).expandable-checkbox-list__arrow
 
 mixin expandable-checkbox-list_opened(header='expandable checkbox list')
-   .expandable-checkbox-list
+   .expandable-checkbox-list(style!=attributes.style)
       .expandable-checkbox-list__header
          h3=header
          img(src=require('./bem/expandable-checkbox-list/expandable-checkbox-list__arrow-up.svg').default).expandable-checkbox-list__arrow

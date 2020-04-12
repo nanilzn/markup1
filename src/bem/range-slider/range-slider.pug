@@ -1,5 +1,5 @@
 mixin range_slider(header="Range slider", description="5 000₽ - 10 000₽")
-   .range-slider__wrapper
+   .range-slider__wrapper(style!=attributes.style)
       .range-slider__header
          h3=header
          .range-slider__description=description

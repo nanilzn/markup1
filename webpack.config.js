@@ -91,8 +91,8 @@ module.exports = {
       template: './src/landing.pug'
     }),
     new HtmlWebpackPlugin({
-      filename: 'search.html',
-      template: './src/search.pug'
+      filename: 'filter.html',
+      template: './src/filter.pug'
     }),
     new MiniCssExtractPlugin({
       filename: 'style.css',

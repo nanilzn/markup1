@@ -1,0 +1,58 @@
+html
+head
+   meta(charset="UTF-8")
+   meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+   title Landing
+   link(rel="stylesheet" href="style.css")
+body
+
+   include bem/block-description/block-description.pug
+   include bem/text-field/text-field.pug
+   include bem/masked-text-field/masked-text-field.pug
+   include bem/date-dropdown/date-dropdown.pug
+   include bem/dropdown/dropdown.pug
+   include bem/checkbox-buttons/checkbox-buttons.pug
+   include bem/radio-buttons/radio-buttons.pug
+   include bem/toggle/toggle.pug
+   include bem/like-button/like-button.pug
+   include bem/rate-button/rate-button.pug
+   include bem/range-slider/range-slider.pug
+   include bem/button/button.pug
+   include bem/pagination/pagination.pug
+   include bem/expandable-checkbox-list/expandable-checkbox-list.pug
+   include bem/feature-list/feature-list.pug
+   include bem/rich-checkbox-buttons/rich-checkbox-buttons.pug
+   include bem/bullet-list/bullet-list.pug
+
+   include bem/header/header.pug
+
+   +header('Войти', 'Зарегистрироваться')
+      li.header__menu-item О нас
+      li.header__menu-item.header__menu-item_dropdown Услуги
+      li.header__menu-item Вакансии
+      li.header__menu-item Новости
+      li.header__menu-item.header__menu-item_dropdown Соглашения
+   .filter
+      .filter__control
+         +block-description('Даты пребывания в отеле')(margin="margin: 30px 0 5px;")
+         +dropdown('19 авг - 23 авг')
+         +range_slider('Диапазон цены', '5 000₽ - 10 000₽')(start='left: calc(31%);' end='left: calc(62.7%)' filled='margin-left: calc(31); width: calc(31%)' style='margin-top: 30px;')
+         .filter__slider-description Стоимость за сутки пребывания в номере
+         +checkbox-buttons('Checkbox buttons')(style='margin-top: 30px; width: 230px;')
+            +checkbox-buttons__row('checkbox1', 'checkbox1', 'Можно курить')
+            +checkbox-buttons__row('checkbox2', 'checkbox2', 'Можно с питомцами', true)
+            +checkbox-buttons__row('checkbox3', 'checkbox3', 'Можно пригласить гостей (до 10 человек)', true)
+         +rich-checkbox-buttons('Доступность')(style='margin-top: 30px;')
+            +rich-checkbox-buttons__row('rcb_id1', 'rcb_checkbox1', 'Широкий коридор', 'Ширина коридоров в номере не менее 91 см.', false)
+            +rich-checkbox-buttons__row('rcb_id2', 'rcb_checkbox2', 'Помощник для инвалидов', 'На 1 этаже вас встретит специалист  и проводит до номера.', false)
+         +expandable-checkbox-list_opened('Дополнительные удобства')(style='margin-top: 30px;')
+            +expandable-checkbox-list_row('ecl_id1', 'ecl_checkbox1', 'Завтрак', false)
+            +expandable-checkbox-list_row('ecl_id2', 'ecl_checkbox2', 'Письменный стол', true)
+            +expandable-checkbox-list_row('ecl_id3', 'ecl_checkbox3', 'Стул для кормления', true)
+            +expandable-checkbox-list_row('ecl_id4', 'ecl_checkbox4', 'Кроватка', true)
+            +expandable-checkbox-list_row('ecl_id5', 'ecl_checkbox5', 'Телевизор', false)
+            +expandable-checkbox-list_row('ecl_id6', 'ecl_checkbox6', 'Шампунь', false)
+            +expandable-checkbox-list_row('ecl_id7', 'ecl_checkbox7', 'Телевизор', false)
+            +expandable-checkbox-list_row('ecl_id8', 'ecl_checkbox8', 'Шампунь', false)
+      .filter__content content
+   include landing__footer.pug

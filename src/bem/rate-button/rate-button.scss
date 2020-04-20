@@ -3,10 +3,22 @@
    justify-content: space-around;
 }
 .rate-button__star {
-   margin: 0 2px;
+   padding: 0 2px;
 }
 .rate-button__star {
    width: 20px;
    height: 20px;
    content: "";
+}
+.rate-button__enabled {
+   width: 20px;
+   height: 19px;
+   background-repeat: no-repeat;
+   background-image: url('./bem/rate-button/rate-button__star_enabled.svg');
+}
+.rate-button__disabled {
+   width: 20px;
+   height: 19px;
+   background-repeat: no-repeat;
+   background-image: url('./bem/rate-button/rate-button__star_disabled.svg');
 }

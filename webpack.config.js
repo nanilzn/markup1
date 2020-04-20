@@ -94,6 +94,10 @@ module.exports = {
       filename: 'filter.html',
       template: './src/filter.pug'
     }),
+    new HtmlWebpackPlugin({
+      filename: 'jquery.html',
+      template: './src/jquery.pug'
+    }),
     new MiniCssExtractPlugin({
       filename: 'style.css',
       chunkFilename: '[id].css',

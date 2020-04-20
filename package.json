@@ -11,6 +11,7 @@
   "author": "ExtraZork",
   "license": "ISC",
   "dependencies": {
+    "jquery": "^3.5.0",
     "webpack": "^4.42.0",
     "webpack-dev-server": "^3.10.3"
   },

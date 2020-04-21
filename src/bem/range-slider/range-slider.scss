@@ -1,5 +1,6 @@
 .range-slider__wrapper {
    width: 100%;
+   @extend %noselect;
 }
 .range-slider__header {
    display: flex;

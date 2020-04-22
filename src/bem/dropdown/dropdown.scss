@@ -88,8 +88,8 @@
    display: flex;
    -webkit-justify-content: space-between;
            justify-content: space-between;
-   height: 38px;
-   line-height: 38px;
+   height: 37px;
+   line-height: 37px;
    padding-left: 14px;
    -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
@@ -106,7 +106,10 @@
 .dropdown__counter {
    padding-top: 1px;
    padding-right: 6px;
+   width: 92px;
+   
    display: flex;
+   justify-content: space-between;
 }
 .dropdown__counter-button {
 
@@ -132,13 +135,24 @@
    
    color: $DarkShade50;
    
-   border: 1px solid $DarkShade50;
+   border: 1px solid $DarkShade25;
    -webkit-border-radius: 15px;
            border-radius: 15px;
 }
 .dropdown__counter-button_disabled {
    color: $DarkShade25;
-   border-color: $DarkShade25;
+   border-color: $DarkShade10;
+}
+.dropdown__counter-button_disabled img {
+   opacity: 0.5;
+}
+.dropdown__minus {
+   position: relative;
+   top: 1px;
+}
+.dropdown__plus {
+   position: relative;
+   top: -1px;
 }
 .dropdown__list-item:last-child {
    // border-bottom: 1px solid $DarkShade25;
@@ -146,7 +160,6 @@
    // border-bottom-left-radius: 4px;
 }
 .dropdown__counter-value {
-   margin: auto 12px;
 }
 .dropdown__select:hover::placeholder {
    color: $DarkShade100;

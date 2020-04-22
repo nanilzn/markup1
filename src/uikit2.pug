@@ -104,21 +104,29 @@ body
          h3.uikit__pagination-h3 Pagination
          +pagination('1 – 12 из 100+ вариантов аренды')
       .uikit__expandable-checkbox-list-wrapper
-         +expandable-checkbox-list('expandable checkbox list')
-      .uikit__expandable-checkbox-list2-wrapper
-         +expandable-checkbox-list_opened('expandable checkbox list')
-            +expandable-checkbox-list_row('ecl_id1', 'ecl_checkbox1', 'Завтрак', false)
-            +expandable-checkbox-list_row('ecl_id2', 'ecl_checkbox2', 'Письменный стол', true)
-            +expandable-checkbox-list_row('ecl_id3', 'ecl_checkbox3', 'Стул для кормления', true)
-            +expandable-checkbox-list_row('ecl_id4', 'ecl_checkbox4', 'Кроватка', true)
-            +expandable-checkbox-list_row('ecl_id5', 'ecl_checkbox5', 'Телевизор', false)
-            +expandable-checkbox-list_row('ecl_id6', 'ecl_checkbox6', 'Шампунь', false)
-            +expandable-checkbox-list_row('ecl_id7', 'ecl_checkbox7', 'Телевизор', false)
-            +expandable-checkbox-list_row('ecl_id8', 'ecl_checkbox8', 'Шампунь', false)
-      .uikit__feature-list-wrapper
+         +expandable-checkbox-list_opened('expandable checkbox list', [
+            {name:'ecl_checkbox1', label: 'Завтрак', checked: false},
+            {name:'ecl_checkbox2', label: 'Письменный стол', checked: true},
+            {name:'ecl_checkbox3', label: 'Стул для кормления', checked: true},
+            {name:'ecl_checkbox4', label: 'Кроватка', checked: true},
+            {name:'ecl_checkbox5', label: 'Телевизор', checked: false},
+            {name:'ecl_checkbox6', label: 'Шампунь', checked: false},
+            {name:'ecl_checkbox7', label: 'Телевизор', checked: false},
+            {name:'ecl_checkbox8', label: 'Шампунь', checked: false},
+         ], false)(style='margin-bottom: 49px;')
+         +expandable-checkbox-list_opened('expandable checkbox list', [
+            {name:'ecl_checkbox9', label: 'Завтрак', checked: false},
+            {name:'ecl_checkbox10', label: 'Письменный стол', checked: true},
+            {name:'ecl_checkbox11', label: 'Стул для кормления', checked: true},
+            {name:'ecl_checkbox12', label: 'Кроватка', checked: true},
+            {name:'ecl_checkbox13', label: 'Телевизор', checked: false},
+            {name:'ecl_checkbox14', label: 'Шампунь', checked: false},
+            {name:'ecl_checkbox15', label: 'Телевизор', checked: false},
+            {name:'ecl_checkbox16', label: 'Шампунь', checked: false},
+         ], true)(style='margin-bottom: 21px;')
          +feature-list()
             +feature-list__row(require('./bem/feature-list/feature-list__smile.svg').default, 'Комфорт', 'Шумопоглощающие стены')
-            +feature-list__row(require('./bem/feature-list/feature-list__house.svg').default, 'Удобство', 'Окно в каждой из спален')
+            +feature-list__row(require('./bem/feature-list/feature-list__house.svg').default, 'Удобство', 'Окно в каждой из спален')         
       .uikit__rich-checkbox-buttons-wrapper
          +rich-checkbox-buttons('Rich checkbox buttons')
             +rich-checkbox-buttons__row('rcb_id1', 'rcb_checkbox1', 'Широкий коридор', 'Ширина коридоров в номере не менее 91 см.', false)

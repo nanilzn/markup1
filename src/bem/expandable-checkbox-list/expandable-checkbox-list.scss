@@ -7,6 +7,9 @@
 .expandable-checkbox-list__rows {
    padding-top: 18px;
 }
+.expandable-checkbox-list__rows_collapsed {
+   display: none;
+}
 .expandable-checkbox-list__row {
    
    // That rule is important.

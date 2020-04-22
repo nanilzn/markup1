@@ -4,19 +4,27 @@ mixin expandable-checkbox-list(header='expandable checkbox list')
          h3=header
          img(src=require('./bem/expandable-checkbox-list/expandable-checkbox-list__arrow-down.svg').default).expandable-checkbox-list__arrow
 
-mixin expandable-checkbox-list_opened(header='expandable checkbox list')
+mixin expandable-checkbox-list_opened(header='expandable checkbox list', data, expanded=false)
    .expandable-checkbox-list(style!=attributes.style)
       .expandable-checkbox-list__header
          h3=header
-         img(src=require('./bem/expandable-checkbox-list/expandable-checkbox-list__arrow-up.svg').default).expandable-checkbox-list__arrow
-      .expandable-checkbox-list__rows
-         if block
-            block
+         if expanded == true
+            img(src=require('./bem/expandable-checkbox-list/expandable-checkbox-list__arrow-up.svg').default).expandable-checkbox-list__arrow
+         else
+            img(src=require('./bem/expandable-checkbox-list/expandable-checkbox-list__arrow-down.svg').default).expandable-checkbox-list__arrow
+      if expanded == true
+         .expandable-checkbox-list__rows
+            each val in data
+               +expandable-checkbox-list_row(val.name, val.label, val.checked)
+      else
+         .expandable-checkbox-list__rows.expandable-checkbox-list__rows_collapsed
+            each val in data
+               +expandable-checkbox-list_row(val.name, val.label, val.checked)
 
-mixin expandable-checkbox-list_row(id, name, label, checked=false)
+mixin expandable-checkbox-list_row(id, label, checked=false)
    .expandable-checkbox-list__row
       if checked == false
-         input(type='checkbox' id=id name=name).expandable-checkbox-list__checkbox
+         input(type='checkbox' id=id name=id).expandable-checkbox-list__checkbox
       else
-         input(type='checkbox' id=id name=name checked).expandable-checkbox-list__checkbox
+         input(type='checkbox' id=id name=id checked).expandable-checkbox-list__checkbox
       label(for=id).expandable-checkbox-list__label=label

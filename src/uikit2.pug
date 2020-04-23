@@ -36,7 +36,11 @@ body
          +text-field_hover('This is pretty awesome')
       .uikit__dropdown-default1-wrapper
          +block-description('Dropdown', 'Default')(margin="margin-bottom: 5px;")
-         +dropdown('Сколько гостей')
+         +dropdown_('Сколько гостей', [
+            { name: 'спальни', value: 2 },
+            { name: 'кровати', value: 2 },
+            { name: 'ванные комнаты', value: 0 }
+         ], false)
          //- +dropdown_default1('Dropdown', 'Default', 'Сколько гостей')
       .uikit__masked-text-field-wrapper
          +block-description('Masked text field', 'Default')(margin="margin-bottom: 5px;")

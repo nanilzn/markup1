@@ -3,6 +3,37 @@ mixin dropdown(value='')
       div.dropdown__select=value
          img(src=require('./bem/dropdown/dropdown__arrow.svg').default).dropdown__arrow.dropdown__arrow_active
 
+mixin dropdown_(defaultValue, data, expanded=false)
+   .dropdown
+      .dropdown__interface
+         if expanded == true
+            div.dropdown__select.dropdown__select_expanded=defaultValue
+               img(src=require('./bem/dropdown/dropdown__arrow_expanded.svg').default).dropdown__arrow
+         else
+            div.dropdown__select=defaultValue
+               img(src=require('./bem/dropdown/dropdown__arrow_expanded.svg').default).dropdown__arrow
+         if expanded == true
+            ul.dropdown__list
+               +dropdown_list(data)
+         else
+            ul.dropdown__list.dropdown__list_collapsed
+               +dropdown_list(data)
+
+mixin dropdown_list(data)
+   each val in data
+      li.dropdown__list-item
+         .dropdown__list-item-text=val.name
+         .dropdown__counter
+            if val.value == 0
+               .dropdown__counter-button.dropdown__minus.dropdown__counter-button_disabled
+                  img(src=require('./bem/dropdown/dropdown__minus.svg').default)
+            else
+               .dropdown__counter-button.dropdown__minus
+                  img(src=require('./bem/dropdown/dropdown__minus.svg').default)
+            .dropdown__counter-value=val.value
+            .dropdown__counter-button.dropdown__plus
+               img(src=require('./bem/dropdown/dropdown__plus.svg').default)
+
 mixin dropdown_default1(name, description, value)
    .dropdown
       .dropdown__header
@@ -33,14 +64,14 @@ mixin dropdown_expanded(name, description, value,  entries, numbers)
                   .dropdown__list-item-text= val
                   .dropdown__counter
                      if numbers[index] == 0
-                        .dropdown__counter-button.dropdown__counter-button_disabled
-                           img(src=require('./bem/dropdown/dropdown__minus.svg').default).dropdown__minus
+                        .dropdown__counter-button.dropdown__minus.dropdown__counter-button_disabled
+                           img(src=require('./bem/dropdown/dropdown__minus.svg').default)
                      else
-                        .dropdown__counter-button
-                           img(src=require('./bem/dropdown/dropdown__minus.svg').default).dropdown__minus
+                        .dropdown__counter-button.dropdown__minus
+                           img(src=require('./bem/dropdown/dropdown__minus.svg').default)
                      .dropdown__counter-value=numbers[index]
-                     .dropdown__counter-button
-                        img(src=require('./bem/dropdown/dropdown__plus.svg').default).dropdown__plus
+                     .dropdown__counter-button.dropdown__plus
+                        img(src=require('./bem/dropdown/dropdown__plus.svg').default)
 
 mixin dropdown_expanded2(name, description, value,  entries, numbers)
    .dropdown
@@ -55,14 +86,14 @@ mixin dropdown_expanded2(name, description, value,  entries, numbers)
                   .dropdown__list-item-text= val
                   .dropdown__counter
                      if numbers[index] == 0
-                        .dropdown__counter-button.dropdown__counter-button_disabled
-                           img(src=require('./bem/dropdown/dropdown__minus.svg').default).dropdown__minus
+                        .dropdown__counter-button.dropdown__minus.dropdown__counter-button_disabled
+                           img(src=require('./bem/dropdown/dropdown__minus.svg').default)
                      else
-                        .dropdown__counter-button
-                           img(src=require('./bem/dropdown/dropdown__minus.svg').default).dropdown__minus
+                        .dropdown__counter-button.dropdown__minus
+                           img(src=require('./bem/dropdown/dropdown__minus.svg').default)
                      .dropdown__counter-value=numbers[index]
-                     .dropdown__counter-button
-                        img(src=require('./bem/dropdown/dropdown__plus.svg').default).dropdown__plus
+                     .dropdown__counter-button.dropdown__plus
+                        img(src=require('./bem/dropdown/dropdown__plus.svg').default)
             .dropdown__control
                .dropdown__clear
                .dropdown__apply Применить
@@ -80,14 +111,14 @@ mixin dropdown_expanded3(name, description, value,  entries, numbers)
                   .dropdown__list-item-text= val
                   .dropdown__counter
                      if numbers[index] == 0
-                        .dropdown__counter-button.dropdown__counter-button_disabled
-                           img(src=require('./bem/dropdown/dropdown__minus.svg').default).dropdown__minus
+                        .dropdown__counter-button.dropdown__minus.dropdown__counter-button_disabled
+                           img(src=require('./bem/dropdown/dropdown__minus.svg').default)
                      else
-                        .dropdown__counter-button
-                           img(src=require('./bem/dropdown/dropdown__minus.svg').default).dropdown__minus
+                        .dropdown__counter-button.dropdown__minus
+                           img(src=require('./bem/dropdown/dropdown__minus.svg').default)
                      .dropdown__counter-value=numbers[index]
-                     .dropdown__counter-button
-                        img(src=require('./bem/dropdown/dropdown__plus.svg').default).dropdown__plus
+                     .dropdown__counter-button.dropdown__plus
+                        img(src=require('./bem/dropdown/dropdown__plus.svg').default)
             .dropdown__control
                .dropdown__clear Очистить
                .dropdown__apply Применить

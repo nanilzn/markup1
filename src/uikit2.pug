@@ -37,11 +37,10 @@ body
       .uikit__dropdown-default1-wrapper
          +block-description('Dropdown', 'Default')(margin="margin-bottom: 5px;")
          +dropdown_('Сколько гостей', [
-            { name: 'спальни', value: 2 },
-            { name: 'кровати', value: 2 },
-            { name: 'ванные комнаты', value: 0 }
-         ], false)
-         //- +dropdown_default1('Dropdown', 'Default', 'Сколько гостей')
+            { name: 'взрослые', value: 0 },
+            { name: 'дети', value: 0 },
+            { name: 'младенцы', value: 0 }
+         ], 'guests', 'apply', false)
       .uikit__masked-text-field-wrapper
          +block-description('Masked text field', 'Default')(margin="margin-bottom: 5px;")
          +masked-text-field('ДД.ММ.ГГГГ')
@@ -51,13 +50,35 @@ body
          +block-description('Filter date dropdown')(margin="margin-bottom: 5px;")
          +dropdown('19 авг - 23 авг')
       .uikit__dropdown-default2-wrapper
-         +dropdown_default2('Dropdown', 'Default', '2 спальни, 2 кровати...')
+         //- +dropdown_default2('Dropdown', 'Default', '2 спальни, 2 кровати...')
+         +block-description('Dropdown', 'Default')
+         +dropdown_('brrr', [
+            { name: 'спальни', value: 2 },
+            { name: 'кровати', value: 2 },
+            { name: 'ванные комнаты', value: 0 }
+         ], 'rooms', 'none', false)
       .uikit__dropdown-expanded-wrapper
-         +dropdown_expanded('Dropdown', 'Expanded', '2 спальни, 2 кровати...', ['спальни', 'кровати', 'ванные комнаты'], [2, 2, 0])
+         +block-description('Dropdown', 'Expanded')
+         +dropdown_('brrr', [
+            { name: 'спальни', value: 2 },
+            { name: 'кровати', value: 2 },
+            { name: 'ванные комнаты', value: 0 }
+         ], 'rooms', 'none', true)
       .uikit__dropdown-opened1-wrapper
-         +dropdown_expanded2('Dropdown', '', 'Сколько гостей', ['взрослые', 'дети', 'младенцы'], [0, 0, 0])
+         +block-description('Dropdown', '')
+         +dropdown_('Сколько гостей', [
+            { name: 'взрослые', value: 0 },
+            { name: 'дети', value: 0 },
+            { name: 'младенцы', value: 0 }
+         ], 'guests', 'apply', true)
       .uikit__dropdown-opened2-wrapper
-         +dropdown_expanded3('Dropdown', '', '3 гостя', ['взрослые', 'дети', 'младенцы'], [2, 1, 0])
+         //- +dropdown_expanded3('Dropdown', '', '3 гостя', ['взрослые', 'дети', 'младенцы'], [2, 1, 0])
+         +block-description('Dropdown', '')
+         +dropdown_('3 гостя', [
+            { name: 'взрослые', value: 2 },
+            { name: 'дети', value: 1 },
+            { name: 'младенцы', value: 0 }
+         ], 'guests', 'full', true)
       .uikit__subscription-text-field-wrapper
          +block-description('Subscription text field')(margin="margin-bottom: 5px;")
          +subscription-text-field('Email')

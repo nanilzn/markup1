@@ -1,6 +1,8 @@
 .dropdown {
    
 }
+.dropdown_rooms {}
+.dropdown_guests {}
 .dropdown__interface {
    box-shadow: 0px 10px 20px $DarkShade5;
 }
@@ -177,6 +179,12 @@
 }
 .dropdown__select:hover {
    border: 1px solid $DarkShade50;
+}
+.dropdown__select-value {
+   width: 70%;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   overflow: hidden;
 }
 .dropdown__control {
    justify-content: space-between;

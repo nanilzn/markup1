@@ -3,5 +3,9 @@ mixin apartment-search-card()
       h1 Найдём номера под ваши пожелания
       +date-dropdown('прибытие', 'ДД.ММ.ГГГГ', 'выезд', 'ДД.ММ.ГГГГ')(margin='margin-top: 20px; margin-bottom: 21px;')
       h3 Гости
-      +dropdown('Сколько гостей')(margin='margin-top: 5px;')
+      +dropdown_([
+            { name: 'взрослые', value: 0 },
+            { name: 'дети', value: 0 },
+            { name: 'младенцы', value: 0 }
+         ], 'guests', 'full', false)(margin='margin-top: 5px;')
       +button-arrow('Подобрать номер')(margin='margin-top: 31px;')

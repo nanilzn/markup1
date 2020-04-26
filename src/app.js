@@ -6,6 +6,7 @@ import './svg/twitter.svg';
 
 import $ from 'jquery';
 
+import './bem/apartment-card/apartment-card.js';
 import './bem/dropdown/dropdown.js';
 import './bem/expandable-checkbox-list/expandable-checkbox-list.js';
 import './bem/rate-button/rate-button.js';

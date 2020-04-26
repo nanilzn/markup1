@@ -39,5 +39,12 @@ body
       +register-account-card()
       +apartment-summary-card()
       +calendar-card()
-      +apartment-card(require('./images/apartment1.png').default, 888, '9 990', true, 5, '145', true)
-      +apartment-card(require('./images/apartment2.png').default, 840, '9 900', false, 4, '65')
+      +apartment-card([
+         require('./images/apartment1.png').default,
+         require('./images/apartment2.png').default,
+         require('./images/apartment1.png').default
+         ], 888, '9 990', true, 5, '145', true)
+      +apartment-card([
+         require('./images/apartment1.png').default,
+         require('./images/apartment2.png').default
+         ], 840, '9 900', false, 4, '65')

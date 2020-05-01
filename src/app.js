@@ -3,7 +3,6 @@ import './uikit.scss';
 import './landing.scss';
 import './filter.scss';
 import './jquery-bed.scss';
-import 'air-datepicker/dist/css/datepicker.css';
 import './svg/twitter.svg';
 
 import $ from 'jquery';

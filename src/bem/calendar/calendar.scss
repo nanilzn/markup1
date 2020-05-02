@@ -1,5 +1,18 @@
-.datepicker-inline {
-   position: absolute;
+.datepicker {
+   width: 100%;
+   border: 1px solid $DarkShade25;
+   box-shadow: 0px 10px 20px $DarkShade5;
+   box-sizing: border-box;
+   border-radius: 4px;
+}
+.datepicker-inline .datepicker {
+   box-shadow: 0px 10px 20px $DarkShade5;
+}
+.datepicker--nav {
+   border-bottom: none;
+}
+.datepicker--buttons {
+   border-top: none;
 }
 .datepicker--pointer {
    display: none;
@@ -8,6 +21,106 @@
    -webkit-transform: translateY(-10px);
       transform: translateY(-10px);
 }
-.abs {
-   position: absolute;
+.datepicker--buttons .datepicker--button:nth-child(1) {
+   order: 2;
+   color: $Purple;
+}
+.datepicker--nav-title:hover {
+   background: white;
+}
+.datepicker--button:hover {
+   background: white;
+}
+.datepicker--button {
+   text-transform: uppercase;
+}
+.datepicker--day-name {
+   color: $Purple;
+   
+   font-family: MontserratBold;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 12px;
+   line-height: 15px;
+}
+.datepicker--buttons .datepicker--button:nth-child(2) {
+   order: 1;
+   color: $DarkShade50;
+}
+.datepicker--cell {
+   height: 40px;
+}
+.datepicker--content {
+   margin: 0 auto;
+   width: 280px;
+}
+.calendar__cell-content {
+   font-family: MontserratRegular;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 12px;
+   line-height: 15px;
+   
+   color: $DarkShade50;
+
+   border-radius: 22px;
+   width: 100%;
+   height: 100%;
+   
+   text-align: center;
+   line-height: 40px;
+}
+.-selected- .calendar__cell-content {
+   font-family: MontserratBold;
+   font-weight: bold;
+   color: white;
+}
+.calendar__cell_special .calendar__cell-content {
+   background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+   border-radius: 22px;
+   
+   color: white;
+}
+.datepicker--cell.-selected- {
+   color: white;
+   background: none;
+}
+.datepicker--cell.-selected-.-current- {
+   color: white;
+   background: none;
+}
+.datepicker--cell.-selected-.-focus- {
+   background: none;
+}
+.datepicker--cell.-focus- {
+   background: none;
+   border: none;
+}
+.datepicker--cell.-range-from- {
+    border: none;
+}
+  .datepicker--cell.-range-to- {
+    border: none;
+}
+.calendar__cell.-in-range- {
+   background: linear-gradient(180deg, rgba(188, 156, 255, 0.25) 0%, rgba(139, 164, 249, 0.25) 100%);
+}
+.calendar__cell.-in-range-.-focus- {
+   background: linear-gradient(180deg, rgba(188, 156, 255, 0.25) 0%, rgba(139, 164, 249, 0.25) 100%);
+}
+.-selected- .calendar__cell-content {
+   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+.calendar__cell.-range-from-, .calendar__cell.-range-from-.-focus- {
+   background: linear-gradient(180deg, rgba(188, 156, 255, 0.25) 0%, rgba(139, 164, 249, 0.25) 100%);
+   border-top-left-radius: 22px;
+   border-bottom-left-radius: 22px;
+}
+.calendar__cell.-range-to-, .calendar__cell.-range-to-.-focus- {
+   background: linear-gradient(180deg, rgba(188, 156, 255, 0.25) 0%, rgba(139, 164, 249, 0.25) 100%);
+   border-top-right-radius: 22px;
+   border-bottom-right-radius: 22px;
+}
+.-other-month- .calendar__cell-content {
+   color: $DarkShade25;
 }

@@ -29,6 +29,7 @@ body
    include bem/apartment-summary-card/apartment-summary-card.pug
    include bem/register-account-card/register-account-card.pug
    include bem/login-card/login-card.pug
+   include bem/calendar/calendar.pug
    include bem/calendar-card/calendar-card.pug
    
    .cards-base
@@ -43,6 +44,8 @@ body
       .cards__apartment-summary-wrapper
          +apartment-summary-card()
       .cards__calendar-wrapper
+         .calendar_inline
+      .cards__calendar-wrapper-old
          +calendar-card()
       .cards__card1-wrapper
          +apartment-card([

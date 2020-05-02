@@ -219,7 +219,7 @@
    // cards
 
 .cards-base {
-   width: 1500px;
+   width: 1800px;
    height: 1500px;
    background-color: #F4F4F6;
 }
@@ -250,6 +250,12 @@
 .cards__calendar-wrapper {
    position: absolute;
    left: 980px;
+   top: 150px;
+   width: 320px;
+}
+.cards__calendar-wrapper-old {
+   position: absolute;
+   left: 1380px;
    top: 150px;
    width: 320px;
 }
@@ -329,6 +335,10 @@
 @import './bem/apartment-summary-card/apartment-summary-card.scss';
 @import './bem/register-account-card/register-account-card.scss';
 @import './bem/login-card/login-card.scss';
+
+@import '../node_modules/air-datepicker/dist/css/datepicker.css';
+
+@import './bem/calendar/calendar.scss';
 @import './bem/calendar-card/calendar-card.scss';
 
 @import './bem/header/header.scss';

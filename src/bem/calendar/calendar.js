@@ -13,6 +13,8 @@ class Calendar
          clearButton: true,
          todayButton: true,
          showOtherYears: false,
+         prevHtml: `<img src=${require('./calendar__left-arrow.svg').default}>`,
+         nextHtml: `<img src=${require('./calendar__right-arrow.svg').default}>`,
          navTitles: {
             days: 'MM <i>yyyy</i>',
             months: 'yyyy',
